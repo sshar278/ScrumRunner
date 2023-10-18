@@ -1,2 +1,4 @@
-This is the README file for the ScrumRunner project.
-This is a part of the course - SER515.
+# Scrum Runner
+ScrumRunner: Sprint Simulation Tool
+
+[Taiga Board](https://tree.taiga.io/project/isingh27-scrumrunner)
