@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.Bloom?>
+<Tab fx:id="tabLogger" text="Simulator" xmlns:fx="http://javafx.com/fxml/1"
+     fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController">
+    <content>
+    <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <children>
+        <ImageView
+                fx:id="imageView"
+                fitHeight="600"
+                fitWidth="520.0"
+                layoutX="61.0"
+                layoutY="83.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+        >
+            <image>
+                <Image
+                        url="@../../assets/Low_Fidelity_Diagram.png"
+                        backgroundLoading="true"
+                />
+            </image>
+        </ImageView>
+        <Label fx:id="lblSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="107.0" text=" ">
+        <font>
+            <Font size="24.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="TEXT" />
+        </cursor>
+        <effect>
+            <Bloom />
+        </effect>
+        </Label>
+        <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnOnClickTest" text="Start Game" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+        </Button>
+    </children>
+    </AnchorPane>
+    </content>
+</Tab>

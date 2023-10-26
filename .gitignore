@@ -1,1 +1,7 @@
 .DS_Store
+.gradle
+.idea
+.vscode
+out
+META-INF
+build
