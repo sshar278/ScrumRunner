@@ -1,0 +1,224 @@
+{
+    "questions": [
+        {
+            "questionFor": "productOwner",
+            "question": "What is the primary responsibility of the Product Owner in a Scrum team?",
+            "answers": [
+                {
+                    "option": "Writing code",
+                    "correct": false
+                },
+                {
+                    "option": "Testing the application",
+                    "correct": false
+                },
+                {
+                    "option": "Prioritizing the product backlog",
+                    "correct": true
+                },
+                {
+                    "option": "Scheduling meetings",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Who has the final say on the priority of items in the product backlog?",
+            "answers": [
+                {
+                    "option": "Developer",
+                    "correct": false
+                },
+                {
+                    "option": "Stakeholder",
+                    "correct": false
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Which of the following best describes a user story?",
+            "answers": [
+                {
+                    "option": "A detailed technical specification",
+                    "correct": false
+                },
+                {
+                    "option": "A narrative from the perspective of the end-user",
+                    "correct": true
+                },
+                {
+                    "option": "A list of all product features",
+                    "correct": false
+                },
+                {
+                    "option": "A bug report from the user",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Which ceremony is NOT a part of the Scrum framework?",
+            "answers": [
+                {
+                    "option": "Daily Standup",
+                    "correct": false
+                },
+                {
+                    "option": "Backlog Refinement",
+                    "correct": false
+                },
+                {
+                    "option": "Sprint Retrospective",
+                    "correct": false
+                },
+                {
+                    "option": "Bi-weekly Budget Meeting",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "In Scrum, what artifact represents the work that needs to be done in the upcoming sprint?",
+            "answers": [
+                {
+                    "option": "Product Backlog",
+                    "correct": false
+                },
+                {
+                    "option": "Sprint Backlog",
+                    "correct": true
+                },
+                {
+                    "option": "User Stories",
+                    "correct": false
+                },
+                {
+                    "option": "Acceptance Criteria",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "If a new high-priority feature request comes in, what should the Product Owner do?",
+            "answers": [
+                {
+                    "option": "Implement the feature immediately",
+                    "correct": false
+                },
+                {
+                    "option": "Discuss it with the developers and make them work overtime",
+                    "correct": false
+                },
+                {
+                    "option": "Prioritize it in the product backlog and discuss it in the next sprint planning",
+                    "correct": true
+                },
+                {
+                    "option": "Ignore it until the current sprint is finished",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "What does a Product Owner use to gauge the value of a product feature?",
+            "answers": [
+                {
+                    "option": "The complexity of the code",
+                    "correct": false
+                },
+                {
+                    "option": "Feedback from the Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Return on Investment (ROI) and customer feedback",
+                    "correct": true
+                },
+                {
+                    "option": "Number of hours worked on the feature",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Which of the following best describes the main role of a Product Owner in a Scrum team?",
+            "answers": [
+                {
+                    "option": "Fixing bugs in the software",
+                    "correct": false
+                },
+                {
+                    "option": "Conducting daily stand-up meetings",
+                    "correct": false
+                },
+                {
+                    "option": "Ensuring the team has the necessary tools",
+                    "correct": false
+                },
+                {
+                    "option": "Defining and prioritizing product features",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "If a stakeholder has feedback about the product, who should they primarily communicate it to?",
+            "answers": [
+                {
+                    "option": "Developer directly",
+                    "correct": false
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                },
+                {
+                    "option": "QA Tester",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "What is the main document where the Product Owner lists features, enhancements, and fixes?",
+            "answers": [
+                {
+                    "option": "Feature List",
+                    "correct": false
+                },
+                {
+                    "option": "User Manual",
+                    "correct": false
+                },
+                {
+                    "option": "Product Backlog",
+                    "correct": true
+                },
+                {
+                    "option": "Sprint Report",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
