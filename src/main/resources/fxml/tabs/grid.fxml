@@ -1,0 +1,181 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import java.lang.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+<!--<?import javafx.scene.control.*?>-->
+
+<!--<BorderPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">-->
+
+<!--    &lt;!&ndash; Center Content &ndash;&gt;-->
+<!--    <center>-->
+<!--        <Label style="-fx-font-size: 32px;" text="SCRUM RUNNER" />-->
+<!--    </center>-->
+
+<!--    &lt;!&ndash; Top Tiles &ndash;&gt;-->
+<!--    <top>-->
+<!--        <HBox prefHeight="124.0" prefWidth="795.0" spacing="0">-->
+<!--           <children>-->
+<!--               <VBox prefHeight="124.0" prefWidth="152.0" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Milestone #2" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--               <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="BUG #1" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--               <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Stand Up" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--               <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Commit Code" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--               <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="BUG #2" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--               <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Raise A PR" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--               <VBox prefHeight="124.0" prefWidth="167.0" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="27.0" prefWidth="134.0" text="Sprint Backlog" />-->
+<!--                  </children>-->
+<!--               </VBox>-->
+<!--           </children>-->
+
+<!--        </HBox>-->
+<!--    </top>-->
+
+<!--    &lt;!&ndash; Right Tiles &ndash;&gt;-->
+<!--    <right>-->
+<!--        <VBox prefHeight="168.0" spacing="0">-->
+<!--           <children>-->
+<!--               &lt;!&ndash; Sample Tile &ndash;&gt;-->
+<!--               <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Task #1" />-->
+<!--                  </children>-->
+<!--               </HBox>-->
+<!--               <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Work On Assigned Task" />-->
+<!--                  </children>-->
+<!--               </HBox>-->
+<!--               <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Deliver KT" />-->
+<!--                  </children>-->
+<!--               </HBox>-->
+<!--               <HBox prefHeight="157.0" prefWidth="163.0" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="MileStone #1" />-->
+<!--                  </children>-->
+<!--               </HBox>-->
+<!--               <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="TASK #2" />-->
+<!--                  </children>-->
+<!--               </HBox>-->
+<!--               <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                  <children>-->
+<!--                      <Label prefHeight="99.0" prefWidth="132.0" text="Work on Assigned Task" />-->
+<!--                  </children>-->
+<!--               </HBox>-->
+<!--           </children>-->
+
+<!--        </VBox>-->
+<!--    </right>-->
+
+<!--    &lt;!&ndash; Bottom Tiles &ndash;&gt;-->
+<!--    <bottom>-->
+<!--        <HBox prefHeight="124.0" prefWidth="795.0" spacing="0">-->
+<!--            <children>-->
+<!--                <VBox prefHeight="124.0" prefWidth="152.0" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="Start/End Sprint" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--                <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="EPIC #1" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--                <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="USER STORY #1" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--                <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="EPIC #2" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--                <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="Stand Up" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--                <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="USER STORY #2" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--                <VBox prefHeight="124.0" prefWidth="167.0" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="27.0" prefWidth="134.0" text="SPRINT PLANNING" />-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--            </children>-->
+
+<!--        </HBox>-->
+<!--    </bottom>-->
+
+<!--    &lt;!&ndash; Left Tiles &ndash;&gt;-->
+<!--    <left>-->
+<!--        <VBox prefHeight="152.0" prefWidth="150" spacing="0">-->
+<!--            <children>-->
+<!--                &lt;!&ndash; Sample Tile &ndash;&gt;-->
+<!--                <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="USER STORY #3" />-->
+<!--                    </children>-->
+<!--                </HBox>-->
+<!--                <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="BUG #3" />-->
+<!--                    </children>-->
+<!--                </HBox>-->
+<!--                <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="TASK #3" />-->
+<!--                    </children>-->
+<!--                </HBox>-->
+<!--                <HBox prefHeight="157.0" prefWidth="163.0" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="Go Back To Last Milestone" />-->
+<!--                    </children>-->
+<!--                </HBox>-->
+<!--                <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="TASK #4" />-->
+<!--                    </children>-->
+<!--                </HBox>-->
+<!--                <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #E0E0E0;">-->
+<!--                    <children>-->
+<!--                        <Label prefHeight="99.0" prefWidth="132.0" text="BUG #4" />-->
+<!--                    </children>-->
+<!--                </HBox>-->
+<!--            </children>-->
+
+<!--        </VBox>-->
+<!--    </left>-->
+<!--</BorderPane>-->
