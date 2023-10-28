@@ -17,6 +17,7 @@
             <tabs>
 
                 <fx:include styleClass="consoleTab" fx:id="consoleTab" source="ConsoleTab.fxml" />
+                <fx:include fx:id="homescreen" source="HomeScreen.fxml" />
                 <fx:include fx:id="LoggerTab" source="LoggerTab.fxml" />
             </tabs>
         </TabPane>

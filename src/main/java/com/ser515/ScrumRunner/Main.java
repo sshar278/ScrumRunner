@@ -1,5 +1,6 @@
 package com.ser515.ScrumRunner;
 
+import com.ser515.ScrumRunner.controller.HomeScreenController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -24,7 +25,7 @@ public class Main extends Application {
     public void init() throws Exception {
         configurableApplicationContext= SpringApplication.run(Main.class);
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Main.fxml"));
-        fxmlLoader.setControllerFactory(configurableApplicationContext::getBean);
+        fxmlLoader.setController(new HomeScreenController());
         parent= fxmlLoader.load();
     }
 
