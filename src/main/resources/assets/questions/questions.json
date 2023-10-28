@@ -747,6 +747,226 @@
                     "correct": false
                 }
             ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "In a Scrum team, who is responsible for prioritizing the product backlog?",
+            "answers": [
+                {
+                    "option": "Developer",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which of the following is a primary benefit of using the MVC design pattern?",
+            "answers": [
+                {
+                    "option": "Data redundancy",
+                    "correct": false
+                },
+                {
+                    "option": "Increased performance",
+                    "correct": false
+                },
+                {
+                    "option": "Separation of concerns",
+                    "correct": true
+                },
+                {
+                    "option": "Integrated testing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which Git command creates a new branch in your repository?",
+            "answers": [
+                {
+                    "option": "git new-branch",
+                    "correct": false
+                },
+                {
+                    "option": "git create-branch",
+                    "correct": false
+                },
+                {
+                    "option": "git branch",
+                    "correct": true
+                },
+                {
+                    "option": "git checkout",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "In the context of Scrum, what is a 'Spike'?",
+            "answers": [
+                {
+                    "option": "A sudden increase in team velocity",
+                    "correct": false
+                },
+                {
+                    "option": "A task aimed at answering a question or gathering information, rather than producing shippable product",
+                    "correct": true
+                },
+                {
+                    "option": "A technical debt",
+                    "correct": false
+                },
+                {
+                    "option": "A surprise bug in the production environment",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "What is a key reason for using a Framework in software development?",
+            "answers": [
+                {
+                    "option": "It allows developers to start from scratch",
+                    "correct": false
+                },
+                {
+                    "option": "It provides a set structure and reduces the need to reinvent the wheel",
+                    "correct": true
+                },
+                {
+                    "option": "It makes the application slower",
+                    "correct": false
+                },
+                {
+                    "option": "It's a mandate for all modern applications",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "In which phase of the software development life cycle (SDLC) are actual code changes implemented?",
+            "answers": [
+                {
+                    "option": "Planning",
+                    "correct": false
+                },
+                {
+                    "option": "Analysis",
+                    "correct": false
+                },
+                {
+                    "option": "Design",
+                    "correct": false
+                },
+                {
+                    "option": "Implementation",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "What is the main purpose of a code review?",
+            "answers": [
+                {
+                    "option": "To blame the developer for mistakes",
+                    "correct": false
+                },
+                {
+                    "option": "To ensure the code meets coding standards and is free of bugs",
+                    "correct": true
+                },
+                {
+                    "option": "To take a break from coding",
+                    "correct": false
+                },
+                {
+                    "option": "To show superiority over colleagues",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which of the following is NOT a benefit of Test-Driven Development (TDD)?",
+            "answers": [
+                {
+                    "option": "Ensures that code meets its design and behaves as intended",
+                    "correct": false
+                },
+                {
+                    "option": "Reduces the debugging time",
+                    "correct": false
+                },
+                {
+                    "option": "Makes the code look aesthetically pleasing",
+                    "correct": true
+                },
+                {
+                    "option": "Improves the quality of code",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which of these is a key principle of the Agile methodology?",
+            "answers": [
+                {
+                    "option": "Following a strict plan over accommodating changes",
+                    "correct": false
+                },
+                {
+                    "option": "Prioritizing comprehensive documentation over working software",
+                    "correct": false
+                },
+                {
+                    "option": "Delivering working software frequently",
+                    "correct": true
+                },
+                {
+                    "option": "Working alone to avoid distractions",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "What should a developer do when they encounter a bug they cannot solve?",
+            "answers": [
+                {
+                    "option": "Ignore it and hope someone else fixes it",
+                    "correct": false
+                },
+                {
+                    "option": "Hide it from the team and move on",
+                    "correct": false
+                },
+                {
+                    "option": "Seek help from a colleague or mentor",
+                    "correct": true
+                },
+                {
+                    "option": "Delete the entire codebase and start over",
+                    "correct": false
+                }
+            ]
         }
     ]
 }
