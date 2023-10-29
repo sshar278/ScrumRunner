@@ -8,14 +8,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
+import javafx.scene.Node;
 
 public class HomeScreenController implements Initializable{
     private Stage stage;
+    private Scene scene;
+    private Parent parent;
 
-    public void setStage(Stage stage) {
-        this.stage = stage;
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -25,19 +26,20 @@ public class HomeScreenController implements Initializable{
     public void handleStartButton(ActionEvent actionEvent) throws IOException {
         // Load the next screen when Start button is clicked
         FXMLLoader loader = new FXMLLoader(getClass().getResource("UserStory.fxml"));
-        Parent root = loader.load();
+        parent= loader.load();
+        UserStoryController userStoryController= loader.getController();
 
-        // Access the controller of the next screen (assuming the controller has the method setStage)
-        UserStoryController nextScreenController = loader.getController();
-        nextScreenController.setStage(stage);
 
-        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        scene= new Scene(parent);
         stage.setScene(scene);
+        userStoryController.setStage(stage);
+        stage.show();
     }
 
     public void handleExitButton(ActionEvent actionEvent) {
         // Close the application when Exit button is clicked
-        stage.close();
+
     }
     
 }
