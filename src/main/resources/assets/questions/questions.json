@@ -1,0 +1,972 @@
+{
+    "questions": [
+        {
+            "questionFor": "productOwner",
+            "question": "What is the primary responsibility of the Product Owner in a Scrum team?",
+            "answers": [
+                {
+                    "option": "Writing code",
+                    "correct": false
+                },
+                {
+                    "option": "Testing the application",
+                    "correct": false
+                },
+                {
+                    "option": "Prioritizing the product backlog",
+                    "correct": true
+                },
+                {
+                    "option": "Scheduling meetings",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Who has the final say on the priority of items in the product backlog?",
+            "answers": [
+                {
+                    "option": "Developer",
+                    "correct": false
+                },
+                {
+                    "option": "Stakeholder",
+                    "correct": false
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Which of the following best describes a user story?",
+            "answers": [
+                {
+                    "option": "A detailed technical specification",
+                    "correct": false
+                },
+                {
+                    "option": "A narrative from the perspective of the end-user",
+                    "correct": true
+                },
+                {
+                    "option": "A list of all product features",
+                    "correct": false
+                },
+                {
+                    "option": "A bug report from the user",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Which ceremony is NOT a part of the Scrum framework?",
+            "answers": [
+                {
+                    "option": "Daily Standup",
+                    "correct": false
+                },
+                {
+                    "option": "Backlog Refinement",
+                    "correct": false
+                },
+                {
+                    "option": "Sprint Retrospective",
+                    "correct": false
+                },
+                {
+                    "option": "Bi-weekly Budget Meeting",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "In Scrum, what artifact represents the work that needs to be done in the upcoming sprint?",
+            "answers": [
+                {
+                    "option": "Product Backlog",
+                    "correct": false
+                },
+                {
+                    "option": "Sprint Backlog",
+                    "correct": true
+                },
+                {
+                    "option": "User Stories",
+                    "correct": false
+                },
+                {
+                    "option": "Acceptance Criteria",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "If a new high-priority feature request comes in, what should the Product Owner do?",
+            "answers": [
+                {
+                    "option": "Implement the feature immediately",
+                    "correct": false
+                },
+                {
+                    "option": "Discuss it with the developers and make them work overtime",
+                    "correct": false
+                },
+                {
+                    "option": "Prioritize it in the product backlog and discuss it in the next sprint planning",
+                    "correct": true
+                },
+                {
+                    "option": "Ignore it until the current sprint is finished",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "What does a Product Owner use to gauge the value of a product feature?",
+            "answers": [
+                {
+                    "option": "The complexity of the code",
+                    "correct": false
+                },
+                {
+                    "option": "Feedback from the Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Return on Investment (ROI) and customer feedback",
+                    "correct": true
+                },
+                {
+                    "option": "Number of hours worked on the feature",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "Which of the following best describes the main role of a Product Owner in a Scrum team?",
+            "answers": [
+                {
+                    "option": "Fixing bugs in the software",
+                    "correct": false
+                },
+                {
+                    "option": "Conducting daily stand-up meetings",
+                    "correct": false
+                },
+                {
+                    "option": "Ensuring the team has the necessary tools",
+                    "correct": false
+                },
+                {
+                    "option": "Defining and prioritizing product features",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "If a stakeholder has feedback about the product, who should they primarily communicate it to?",
+            "answers": [
+                {
+                    "option": "Developer directly",
+                    "correct": false
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                },
+                {
+                    "option": "QA Tester",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "productOwner",
+            "question": "What is the main document where the Product Owner lists features, enhancements, and fixes?",
+            "answers": [
+                {
+                    "option": "Feature List",
+                    "correct": false
+                },
+                {
+                    "option": "User Manual",
+                    "correct": false
+                },
+                {
+                    "option": "Product Backlog",
+                    "correct": true
+                },
+                {
+                    "option": "Sprint Report",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which of the following best describes the primary role of a tester in a Scrum team?",
+            "answers": [
+                {
+                    "option": "To document requirements",
+                    "correct": false
+                },
+                {
+                    "option": "To find defects in the product",
+                    "correct": false
+                },
+                {
+                    "option": "To ensure the product meets the acceptance criteria",
+                    "correct": true
+                },
+                {
+                    "option": "To manage the product backlog",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "In a Scrum team, when should a tester be involved in the development process?",
+            "answers": [
+                {
+                    "option": "Only during the testing phase",
+                    "correct": false
+                },
+                {
+                    "option": "After the development phase is completed",
+                    "correct": false
+                },
+                {
+                    "option": "From the beginning of the sprint",
+                    "correct": true
+                },
+                {
+                    "option": "Only during sprint reviews",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Who is primarily responsible for ensuring the quality of the product in a Scrum team?",
+            "answers": [
+                {
+                    "option": "The Tester",
+                    "correct": false
+                },
+                {
+                    "option": "The Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "The Product Owner",
+                    "correct": false
+                },
+                {
+                    "option": "The whole team",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which practice encourages testers to write tests before the code is developed?",
+            "answers": [
+                {
+                    "option": "Test-Driven Development (TDD)",
+                    "correct": false
+                },
+                {
+                    "option": "Behavior-Driven Development (BDD)",
+                    "correct": false
+                },
+                {
+                    "option": "Acceptance Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Both a & b",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "In a Scrum simulation tool, what should a tester primarily focus on?",
+            "answers": [
+                {
+                    "option": "Manual testing only",
+                    "correct": false
+                },
+                {
+                    "option": "Automated testing only",
+                    "correct": false
+                },
+                {
+                    "option": "Both manual and automated testing",
+                    "correct": true
+                },
+                {
+                    "option": "Documentation only",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which of the following best describes a tester's role during Sprint Planning?",
+            "answers": [
+                {
+                    "option": "Observing and taking notes",
+                    "correct": false
+                },
+                {
+                    "option": "Defining the sprint goal",
+                    "correct": false
+                },
+                {
+                    "option": "Asking questions to clarify requirements and acceptance criteria",
+                    "correct": true
+                },
+                {
+                    "option": "Deciding on the sprint duration",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "A tester in a Scrum team is typically involved in:",
+            "answers": [
+                {
+                    "option": "Writing user stories",
+                    "correct": false
+                },
+                {
+                    "option": "Setting up the CI/CD pipeline",
+                    "correct": false
+                },
+                {
+                    "option": "Estimating testing effort",
+                    "correct": true
+                },
+                {
+                    "option": "Prioritizing the product backlog",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which artifact in Scrum helps the tester understand the work to be done in a sprint?",
+            "answers": [
+                {
+                    "option": "Product backlog",
+                    "correct": false
+                },
+                {
+                    "option": "Sprint backlog",
+                    "correct": true
+                },
+                {
+                    "option": "Increment",
+                    "correct": false
+                },
+                {
+                    "option": "Burn-down chart",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Who is responsible for accepting or rejecting a completed user story based on testing?",
+            "answers": [
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Developer",
+                    "correct": false
+                },
+                {
+                    "option": "Tester",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which type of testing emphasizes collaboration between developers, testers, and the business?",
+            "answers": [
+                {
+                    "option": "Unit Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Performance Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Behavior-Driven Development (BDD)",
+                    "correct": true
+                },
+                {
+                    "option": "Security Testing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "What is a tester's main responsibility during a Sprint Review?",
+            "answers": [
+                {
+                    "option": "Demonstrating the product to stakeholders",
+                    "correct": false
+                },
+                {
+                    "option": "Providing feedback on code quality",
+                    "correct": false
+                },
+                {
+                    "option": "Showcasing the testing done and discussing quality metrics",
+                    "correct": true
+                },
+                {
+                    "option": "Planning the next sprint",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Continuous Integration is a practice where:",
+            "answers": [
+                {
+                    "option": "Code is integrated once at the end of the sprint.",
+                    "correct": false
+                },
+                {
+                    "option": "Code is integrated after manual verification.",
+                    "correct": false
+                },
+                {
+                    "option": "Code changes are regularly integrated and tested automatically.",
+                    "correct": true
+                },
+                {
+                    "option": "Code is reviewed at the end of the project.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Exploratory testing in Scrum is:",
+            "answers": [
+                {
+                    "option": "Scripted and pre-planned.",
+                    "correct": false
+                },
+                {
+                    "option": "Based on detailed test cases.",
+                    "correct": false
+                },
+                {
+                    "option": "An unscripted, creativity-based approach to testing.",
+                    "correct": true
+                },
+                {
+                    "option": "Performed only at the end of the project.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "In Scrum, a bug found after the sprint ends should be:",
+            "answers": [
+                {
+                    "option": "Ignored as it's out of scope.",
+                    "correct": false
+                },
+                {
+                    "option": "Added to the product backlog.",
+                    "correct": true
+                },
+                {
+                    "option": "Fixed immediately by the developers.",
+                    "correct": false
+                },
+                {
+                    "option": "Raised during the Sprint Retrospective.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "The practice of ensuring that code and test cases are developed simultaneously is called:",
+            "answers": [
+                {
+                    "option": "Sprint Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Test-First Development",
+                    "correct": true
+                },
+                {
+                    "option": "Concurrent Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Agile Testing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "In a Scrum team, the responsibility of defining the 'Definition of Done' lies with:",
+            "answers": [
+                {
+                    "option": "The Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "The Tester",
+                    "correct": false
+                },
+                {
+                    "option": "The Product Owner",
+                    "correct": false
+                },
+                {
+                    "option": "The whole team",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Regression testing in a Scrum environment is best performed using:",
+            "answers": [
+                {
+                    "option": "Manual Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Automated Testing",
+                    "correct": true
+                },
+                {
+                    "option": "Exploratory Testing",
+                    "correct": false
+                },
+                {
+                    "option": "Usability Testing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "In a Scrum environment, a tester should prioritize:",
+            "answers": [
+                {
+                    "option": "Completing all test cases",
+                    "correct": false
+                },
+                {
+                    "option": "Finding all defects",
+                    "correct": false
+                },
+                {
+                    "option": "Ensuring the product meets the acceptance criteria",
+                    "correct": true
+                },
+                {
+                    "option": "Writing extensive documentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which of the following best represents a tester's role during the Daily Scrum?",
+            "answers": [
+                {
+                    "option": "Reporting on completed testing tasks and upcoming challenges",
+                    "correct": true
+                },
+                {
+                    "option": "Assigning tasks to team members",
+                    "correct": false
+                },
+                {
+                    "option": "Reviewing code quality metrics",
+                    "correct": false
+                },
+                {
+                    "option": "Demonstrating the product to stakeholders",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "When a tester encounters an ambiguous user story, what is the best course of action?",
+            "answers": [
+                {
+                    "option": "Make an assumption and test accordingly.",
+                    "correct": false
+                },
+                {
+                    "option": "Wait for the Sprint Review to clarify.",
+                    "correct": false
+                },
+                {
+                    "option": "Seek clarification from the Product Owner.",
+                    "correct": true
+                },
+                {
+                    "option": "Escalate to the Scrum Master.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which of the following is a benefit of early and continuous testing in Scrum?",
+            "answers": [
+                {
+                    "option": "Reduced documentation",
+                    "correct": false
+                },
+                {
+                    "option": "Faster development cycles",
+                    "correct": false
+                },
+                {
+                    "option": "Quicker feedback loops and early defect detection",
+                    "correct": true
+                },
+                {
+                    "option": "Reduced number of user stories",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Pair testing, where a developer and tester work together on a feature, is an example of:",
+            "answers": [
+                {
+                    "option": "Test-Driven Development (TDD)",
+                    "correct": false
+                },
+                {
+                    "option": "Behavior-Driven Development (BDD)",
+                    "correct": false
+                },
+                {
+                    "option": "Collaborative testing",
+                    "correct": true
+                },
+                {
+                    "option": "Regression testing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "Which of the following metrics is NOT typically tracked by a tester in a Scrum team?",
+            "answers": [
+                {
+                    "option": "Number of defects found and resolved",
+                    "correct": false
+                },
+                {
+                    "option": "Code churn rate (changes in source code)",
+                    "correct": true
+                },
+                {
+                    "option": "Test case pass rate",
+                    "correct": false
+                },
+                {
+                    "option": "Velocity of the team",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "tester",
+            "question": "In a Scrum environment, if a significant defect is discovered right before the end of a sprint, what should a tester ideally do?",
+            "answers": [
+                {
+                    "option": "Delay the defect for the next sprint.",
+                    "correct": false
+                },
+                {
+                    "option": "Push the team to work overtime to fix the defect.",
+                    "correct": false
+                },
+                {
+                    "option": "Communicate with the team and Product Owner to decide the next steps.",
+                    "correct": true
+                },
+                {
+                    "option": "Bypass the defect and focus on other tasks.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "In a Scrum team, who is responsible for prioritizing the product backlog?",
+            "answers": [
+                {
+                    "option": "Developer",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": true
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Stakeholder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which of the following is a primary benefit of using the MVC design pattern?",
+            "answers": [
+                {
+                    "option": "Data redundancy",
+                    "correct": false
+                },
+                {
+                    "option": "Increased performance",
+                    "correct": false
+                },
+                {
+                    "option": "Separation of concerns",
+                    "correct": true
+                },
+                {
+                    "option": "Integrated testing",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which Git command creates a new branch in your repository?",
+            "answers": [
+                {
+                    "option": "git new-branch",
+                    "correct": false
+                },
+                {
+                    "option": "git create-branch",
+                    "correct": false
+                },
+                {
+                    "option": "git branch",
+                    "correct": true
+                },
+                {
+                    "option": "git checkout",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "In the context of Scrum, what is a 'Spike'?",
+            "answers": [
+                {
+                    "option": "A sudden increase in team velocity",
+                    "correct": false
+                },
+                {
+                    "option": "A task aimed at answering a question or gathering information, rather than producing shippable product",
+                    "correct": true
+                },
+                {
+                    "option": "A technical debt",
+                    "correct": false
+                },
+                {
+                    "option": "A surprise bug in the production environment",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "What is a key reason for using a Framework in software development?",
+            "answers": [
+                {
+                    "option": "It allows developers to start from scratch",
+                    "correct": false
+                },
+                {
+                    "option": "It provides a set structure and reduces the need to reinvent the wheel",
+                    "correct": true
+                },
+                {
+                    "option": "It makes the application slower",
+                    "correct": false
+                },
+                {
+                    "option": "It's a mandate for all modern applications",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "In which phase of the software development life cycle (SDLC) are actual code changes implemented?",
+            "answers": [
+                {
+                    "option": "Planning",
+                    "correct": false
+                },
+                {
+                    "option": "Analysis",
+                    "correct": false
+                },
+                {
+                    "option": "Design",
+                    "correct": false
+                },
+                {
+                    "option": "Implementation",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "What is the main purpose of a code review?",
+            "answers": [
+                {
+                    "option": "To blame the developer for mistakes",
+                    "correct": false
+                },
+                {
+                    "option": "To ensure the code meets coding standards and is free of bugs",
+                    "correct": true
+                },
+                {
+                    "option": "To take a break from coding",
+                    "correct": false
+                },
+                {
+                    "option": "To show superiority over colleagues",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which of the following is NOT a benefit of Test-Driven Development (TDD)?",
+            "answers": [
+                {
+                    "option": "Ensures that code meets its design and behaves as intended",
+                    "correct": false
+                },
+                {
+                    "option": "Reduces the debugging time",
+                    "correct": false
+                },
+                {
+                    "option": "Makes the code look aesthetically pleasing",
+                    "correct": true
+                },
+                {
+                    "option": "Improves the quality of code",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "Which of these is a key principle of the Agile methodology?",
+            "answers": [
+                {
+                    "option": "Following a strict plan over accommodating changes",
+                    "correct": false
+                },
+                {
+                    "option": "Prioritizing comprehensive documentation over working software",
+                    "correct": false
+                },
+                {
+                    "option": "Delivering working software frequently",
+                    "correct": true
+                },
+                {
+                    "option": "Working alone to avoid distractions",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "developer",
+            "question": "What should a developer do when they encounter a bug they cannot solve?",
+            "answers": [
+                {
+                    "option": "Ignore it and hope someone else fixes it",
+                    "correct": false
+                },
+                {
+                    "option": "Hide it from the team and move on",
+                    "correct": false
+                },
+                {
+                    "option": "Seek help from a colleague or mentor",
+                    "correct": true
+                },
+                {
+                    "option": "Delete the entire codebase and start over",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

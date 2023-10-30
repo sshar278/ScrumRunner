@@ -7,17 +7,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
-
-
+<?import javafx.scene.media.Media.*?>
+<?import javafx.scene.media.MediaView.*?>
+<?import javafx.scene.media.MediaPlayer.*?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.Media?>
 <Tab fx:id="tabLogger" text="Simulator" xmlns:fx="http://javafx.com/fxml/1"
      fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController">
     <content>
     <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <children>
         <ImageView
-                fx:id="imageView"
+                fx:id="imageView1"
                 fitHeight="600"
                 fitWidth="520.0"
                 layoutX="61.0"
@@ -32,6 +37,24 @@
                 />
             </image>
         </ImageView>
+        <ImageView
+                fx:id="imageView2"
+                fitHeight="100"
+                fitWidth="100.0"
+                layoutX="700.0"
+                layoutY="200.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+        >
+            <image>
+                <Image
+                        url="@../../assets/dice-roll.gif"
+                        backgroundLoading="true"
+                />
+            </image>
+        </ImageView>
+
+
         <Label fx:id="lblSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="107.0" text=" ">
         <font>
             <Font size="24.0" />
