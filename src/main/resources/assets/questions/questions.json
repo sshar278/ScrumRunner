@@ -967,6 +967,439 @@
                     "correct": false
                 }
             ]
+        },
+        
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is a Scrum Master primarily responsible for?",
+            "answers": [
+                {
+                    "option": "Managing the team's work",
+                    "correct": false
+                },
+                {
+                    "option": "Facilitating the Scrum process",
+                    "correct": true
+                },
+                {
+                    "option": "Writing code",
+                    "correct": false
+                },
+                {
+                    "option": "Setting project timelines",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Which role is NOT a part of the Scrum framework?",
+            "answers": [
+                {
+                    "option": "Product Owner",
+                    "correct": false
+                },
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Project Manager",
+                    "correct": true
+                },
+                {
+                    "option": "Development Team",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is the Scrum Master's role during the Daily Scrum meeting?",
+            "answers": [
+                {
+                    "option": "Lead the meeting and assign tasks",
+                    "correct": false
+                },
+                {
+                    "option": "Report progress to management",
+                    "correct": false
+                },
+                {
+                    "option": "Facilitate the meeting and ensure it stays within the time-box",
+                    "correct": true
+                },
+                {
+                    "option": "Take notes for documentation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "The Scrum Master is responsible for removing __________ that impedes the team's progress.",
+            "answers": [
+                {
+                    "option": "Any challenge or obstacle",
+                    "correct": true
+                },
+                {
+                    "option": "Only technical issues",
+                    "correct": false
+                },
+                {
+                    "option": "Only team conflicts",
+                    "correct": false
+                },
+                {
+                    "option": "Product Backlog items",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "How often should a Scrum Master update stakeholders on the project's progress?",
+            "answers": [
+                {
+                    "option": "Once at the end of the project",
+                    "correct": false
+                },
+                {
+                    "option": "At the start of each sprint",
+                    "correct": false
+                },
+                {
+                    "option": "Whenever a team member requests it",
+                    "correct": false
+                },
+                {
+                    "option": "As needed, but at least at the end of each sprint",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Which of the following is a key responsibility of the Scrum Master in relation to the Product Owner?",
+            "answers": [
+                {
+                    "option": "Make all decisions regarding the product",
+                    "correct": false
+                },
+                {
+                    "option": "Represent the Product Owner to the team",
+                    "correct": true
+                },
+                {
+                    "option": "Ensure the Product Owner writes user stories",
+                    "correct": false
+                },
+                {
+                    "option": "Assign tasks to the Product Owner",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is the Scrum Master's primary focus during sprint planning meetings?",
+            "answers": [
+                {
+                    "option": "Estimating task durations",
+                    "correct": false
+                },
+                {
+                    "option": "Selecting which user stories to work on",
+                    "correct": true
+                },
+                {
+                    "option": "Monitoring team members' workloads",
+                    "correct": false
+                },
+                {
+                    "option": "Ensuring the team follows the Agile Manifesto",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Which Scrum principle does the Scrum Master uphold by protecting the Development Team from outside interference?",
+            "answers": [
+                {
+                    "option": "Commitment",
+                    "correct": false
+                },
+                {
+                    "option": "Focus",
+                    "correct": false
+                },
+                {
+                    "option": "Openness",
+                    "correct": true
+                },
+                {
+                    "option": "Courage",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Scrum Masters help teams improve by using ________.",
+            "answers": [
+                {
+                    "option": "Agile methodologies",
+                    "correct": false
+                },
+                {
+                    "option": "Coaching, mentoring, and serving as a servant leader",
+                    "correct": true
+                },
+                {
+                    "option": "Dictating how tasks should be done",
+                    "correct": false
+                },
+                {
+                    "option": "Managing the team's daily activities",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is one of the core responsibilities of a Scrum Master regarding the team's self-organization?",
+            "answers": [
+                {
+                    "option": "Dictating the tasks to each team member",
+                    "correct": false
+                },
+                {
+                    "option": "Micromanaging each team member's work",
+                    "correct": false
+                },
+                {
+                    "option": "Empowering the team to make decisions and manage their own work",
+                    "correct": true
+                },
+                {
+                    "option": "Assigning work to team members",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "The Scrum Master should encourage the team to follow Scrum events and artifacts to ensure _______.",
+            "answers": [
+                {
+                    "option": "High-quality code",
+                    "correct": false
+                },
+                {
+                    "option": "A happy work environment",
+                    "correct": false
+                },
+                {
+                    "option": "Transparency and inspection",
+                    "correct": true
+                },
+                {
+                    "option": "Rapid development",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is the role of the Scrum Master in relation to the Definition of Done?",
+            "answers": [
+                {
+                    "option": "The Scrum Master defines it for the team",
+                    "correct": false
+                },
+                {
+                    "option": "The Scrum Master ensures it is maintained and understood by the team",
+                    "correct": true
+                },
+                {
+                    "option": "The Scrum Master has no involvement with the Definition of Done",
+                    "correct": false
+                },
+                {
+                    "option": "The Scrum Master polices the team to make sure they meet it",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Which Scrum artifact is used to manage the Product Backlog?",
+            "answers": [
+                {
+                    "option": "Burndown chart",
+                    "correct": false
+                },
+                {
+                    "option": "Sprint backlog",
+                    "correct": false
+                },
+                {
+                    "option": "Product increment",
+                    "correct": false
+                },
+                {
+                    "option": "Product Backlog",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "The Scrum Master should protect the team from changes to the sprint goal during a sprint.",
+            "answers": [
+                {
+                    "option": "True",
+                    "correct": true
+                },
+                {
+                    "option": "False",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is one of the ways a Scrum Master can help the team improve their process?",
+            "answers": [
+                {
+                    "option": "By doing the work for them",
+                    "correct": false
+                },
+                {
+                    "option": "By criticizing their performance",
+                    "correct": false
+                },
+                {
+                    "option": "By asking open-ended questions and facilitating retrospectives",
+                    "correct": true
+                },
+                {
+                    "option": "By setting strict rules for team interactions",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Which of the following is NOT a key responsibility of a Scrum Master?",
+            "answers": [
+                {
+                    "option": "Coordinating all meetings and events",
+                    "correct": false
+                },
+                {
+                    "option": "Helping the team create high-quality products",
+                    "correct": false
+                },
+                {
+                    "option": "Acting as a product owner",
+                    "correct": true
+                },
+                {
+                    "option": "Coaching the team to embrace Scrum values",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "In the Scrum framework, who is responsible for tracking the team's progress and updating the sprint burndown chart?",
+            "answers": [
+                {
+                    "option": "Scrum Master",
+                    "correct": false
+                },
+                {
+                    "option": "Product Owner",
+                    "correct": false
+                },
+                {
+                    "option": "Development Team",
+                    "correct": true
+                },
+                {
+                    "option": "Anyone on the Scrum Team",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "How should a Scrum Master handle conflicts within the development team?",
+            "answers": [
+                {
+                    "option": "Resolve the conflicts personally",
+                    "correct": false
+                },
+                {
+                    "option": "Ignore them and hope they go away",
+                    "correct": false
+                },
+                {
+                    "option": "Coach the team to resolve conflicts collaboratively",
+                    "correct": true
+                },
+                {
+                    "option": "Escalate the conflicts to senior management",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "What is the main purpose of the Daily Scrum meeting?",
+            "answers": [
+                {
+                    "option": "Report progress to stakeholders",
+                    "correct": false
+                },
+                {
+                    "option": "Plan the work for the day",
+                    "correct": false
+                },
+                {
+                    "option": "Inspect progress and adapt the plan",
+                    "correct": true
+                },
+                {
+                    "option": "Update the Product Backlog",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionFor": "scrumMaster",
+            "question": "Which of the following is NOT a key value of the Scrum framework?",
+            "answers": [
+                {
+                    "option": "Transparency",
+                    "correct": false
+                },
+                {
+                    "option": "Courage",
+                    "correct": false
+                },
+                {
+                    "option": "Commitment",
+                    "correct": false
+                },
+                {
+                    "option": "Perfection",
+                    "correct": true
+                }
+            ]
         }
     ]
 }
