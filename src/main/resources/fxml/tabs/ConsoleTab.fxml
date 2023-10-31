@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<Tab fx:id="consoleTab" text="ScrumRunner: Tutorial" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.ConsoleTabController">
+<Tab fx:id="consoleTab" text="ScrumRunner: Tutorial" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
     <content>
         <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -22,7 +22,7 @@
                         <Bloom />
                     </effect>
                 </Label>
-                <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="155.0" mnemonicParsing="false" onAction="#sayHello" text="Start Game" textAlignment="CENTER">
+                <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="155.0" mnemonicParsing="false"  text="Start Game" textAlignment="CENTER">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>

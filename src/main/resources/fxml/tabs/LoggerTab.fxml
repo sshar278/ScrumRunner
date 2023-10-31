@@ -16,8 +16,7 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.media.MediaPlayer?>
 <?import javafx.scene.media.Media?>
-<Tab fx:id="tabLogger" text="Simulator" xmlns:fx="http://javafx.com/fxml/1"
-     fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController">
+<Tab fx:id="tabLogger" text="Simulator" xmlns:fx="http://javafx.com/fxml/1">
     <content>
     <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <children>
@@ -66,7 +65,7 @@
             <Bloom />
         </effect>
         </Label>
-        <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnOnClickTest" text="Start Game" textAlignment="CENTER">
+        <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  text="Start Game" onAction="#btnOnClickTest" textAlignment="CENTER">
         <font>
             <Font name="System Bold" size="14.0" />
         </font>
