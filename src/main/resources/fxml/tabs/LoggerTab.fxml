@@ -37,22 +37,14 @@
                 />
             </image>
         </ImageView>
-        <ImageView
-                fx:id="imageView2"
-                fitHeight="100"
-                fitWidth="100.0"
-                layoutX="700.0"
-                layoutY="200.0"
-                pickOnBounds="true"
-                preserveRatio="true"
-        >
+        <ImageView fx:id="diceImage" fitHeight="200.0" fitWidth="200.0" layoutX="692.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image
-                        url="@../../assets/dice-roll.gif"
-                        backgroundLoading="true"
-                />
-            </image>
-        </ImageView>
+                <Image url="@../../assets/img.png" />
+            </image></ImageView>
+        <Button fx:id="rollButton" layoutX="679.0" layoutY="353.0" mnemonicParsing="false" onAction="#roll" text="Roll">
+            <font>
+                <Font size="35.0" />
+            </font></Button>
 
 
         <Label fx:id="lblSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="107.0" text=" ">
