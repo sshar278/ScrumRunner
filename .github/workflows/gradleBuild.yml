@@ -1,0 +1,21 @@
+name: "Gradle Build"
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  gradle-rc:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: 8
+    - uses: gradle/gradle-build-action@v2
+      id: setup-gradle
+      with:
+        gradle-version: 4.2.1
+    - run: gradle build --dry-run # just test build configuration
+    - run: echo "The release-candidate version was ${{ steps.setup-gradle.outputs.gradle-version }}"
