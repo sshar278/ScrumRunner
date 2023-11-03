@@ -7,22 +7,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
-<?import javafx.scene.media.Media.*?>
-<?import javafx.scene.media.MediaView.*?>
-<?import javafx.scene.media.MediaPlayer.*?>
-<?import javafx.scene.layout.AnchorPane?>
+
+
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.effect.Bloom?>
-<?import javafx.scene.media.MediaView?>
-<?import javafx.scene.media.MediaPlayer?>
-<?import javafx.scene.media.Media?>
 <Tab fx:id="tabLogger" text="Simulator" xmlns:fx="http://javafx.com/fxml/1"
      fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController">
     <content>
     <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <children>
         <ImageView
-                fx:id="imageView1"
+                fx:id="imageView"
                 fitHeight="600"
                 fitWidth="520.0"
                 layoutX="61.0"
@@ -37,6 +32,8 @@
                 />
             </image>
         </ImageView>
+<<<<<<< HEAD
+=======
         <ImageView fx:id="diceImage" fitHeight="200.0" fitWidth="200.0" layoutX="692.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../../assets/img.png" />
@@ -47,6 +44,7 @@
             </font></Button>
 
 
+>>>>>>> 2ed3b18669d997245f5d1ba295dd8ee5b73fa751
         <Label fx:id="lblSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="107.0" text=" ">
         <font>
             <Font size="24.0" />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.KanbanBoardController">
+    <children>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="580.0" prefWidth="780.0" spacing="10.0">
+            <VBox alignment="CENTER" prefHeight="590.0" prefWidth="250.0" spacing="10.0">
+                <Label text="To Do" />
+                <ListView fx:id="toDoListView" prefHeight="300.0" prefWidth="250.0" />
+                <TextField fx:id="toDoInput" promptText="Add a task..." />
+                <Button text="Add" onAction="#addToDo" />
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="590.0" prefWidth="250.0" spacing="10.0">
+                <Label text="In Progress" />
+                <ListView fx:id="inProgressListView" prefHeight="300.0" prefWidth="250.0" />
+                <TextField fx:id="inProgressInput" promptText="Add a task..." />
+                <Button text="Add" onAction="#addInProgress" />
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="590.0" prefWidth="250.0" spacing="10.0">
+                <Label text="Done" />
+                <ListView fx:id="doneListView" prefHeight="300.0" prefWidth="250.0" />
+                <TextField fx:id="doneInput" promptText="Add a task..." />
+                <Button text="Add" onAction="#addDone" />
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="590.0" prefWidth="250.0" spacing="10.0">
+                <Label text="Blocker" />
+                <ListView fx:id="blockerListView" prefHeight="300.0" prefWidth="250.0" />
+                <TextField fx:id="blockerInput" promptText="Add a task..." />
+                <Button text="Add" onAction="#addToDo" />
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>
