@@ -11,10 +11,8 @@
 
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.effect.Bloom?>
-<Tab fx:id="tabLogger" text="Simulator" xmlns:fx="http://javafx.com/fxml/1"
-     fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController">
-    <content>
-    <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+    <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <children>
         <ImageView
                 fx:id="imageView"
@@ -32,8 +30,6 @@
                 />
             </image>
         </ImageView>
-<<<<<<< HEAD
-=======
         <ImageView fx:id="diceImage" fitHeight="200.0" fitWidth="200.0" layoutX="692.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../../assets/img.png" />
@@ -44,7 +40,6 @@
             </font></Button>
 
 
->>>>>>> 2ed3b18669d997245f5d1ba295dd8ee5b73fa751
         <Label fx:id="lblSpring" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="107.0" text=" ">
         <font>
             <Font size="24.0" />
@@ -63,5 +58,3 @@
         </Button>
     </children>
     </AnchorPane>
-    </content>
-</Tab>

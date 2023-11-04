@@ -15,12 +15,28 @@ public class ButtonActionsController {
 
     @FXML
     private Button startGameButton;
+    @FXML
+    private Button btnDiceRoll;
 
     @FXML
     private void startGame() throws IOException {
         System.out.println("Clicked Start Button!");
         try{
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/InputForm/InputForm.fxml"));
+            Parent root1 = (Parent) loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void btnDiceRoll() throws IOException {
+        System.out.println("Dice Roll Button Clicked!");
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/tabs/LoggerTab.fxml"));
             Parent root1 = (Parent) loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));

@@ -1,6 +1,6 @@
 package com.ser515.ScrumRunner.services;
 
-import com.ser515.ScrumRunner.data.SpringReposiroty;
+import com.ser515.ScrumRunner.data.SpringRepository;
 import com.ser515.ScrumRunner.model.Spring;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,16 +8,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class SpringServiceImpl implements SpringService {
 
-    private SpringReposiroty springReposiroty;
+    private SpringRepository springRepository;
 
     @Autowired
-    public SpringServiceImpl(SpringReposiroty springReposiroty){
-        this.springReposiroty=springReposiroty;
+    public SpringServiceImpl(SpringRepository springRepository){
+        this.springRepository = springRepository;
     }
 
 
     @Override
     public Spring getSpring() {
-        return springReposiroty.getSpring();
+        return springRepository.getSpring();
     }
 }
