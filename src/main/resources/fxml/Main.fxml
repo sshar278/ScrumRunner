@@ -8,10 +8,10 @@
     <children>
         <fx:include fx:id="startPage" source="Start/Start.fxml" />
     </children>
-   <opaqueInsets>
-      <Insets />
-   </opaqueInsets>
-   <cursor>
-      <Cursor fx:constant="DEFAULT" />
-   </cursor>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
 </VBox>
