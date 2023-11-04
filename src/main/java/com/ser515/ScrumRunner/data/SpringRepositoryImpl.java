@@ -4,7 +4,7 @@ import com.ser515.ScrumRunner.model.Spring;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class SpringRepositoryImpl implements SpringReposiroty {
+public class SpringRepositoryImpl implements SpringRepository {
     @Override
     public Spring getSpring() {
         Spring spring = new Spring("Project Under Development!");
