@@ -6,7 +6,7 @@
 
 <VBox alignment="CENTER" prefHeight="670.0" prefWidth="867.0" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" styleClass="mainContainer">
     <children>
-        <fx:include fx:id="startPage" source="home/HomeScreen.fxml" />
+        <fx:include fx:id="startPage" source="Start/Start.fxml" />
     </children>
     <opaqueInsets>
         <Insets />

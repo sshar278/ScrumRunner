@@ -17,7 +17,7 @@
           prefHeight="800.0" prefWidth="1000.0"
           xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/21"
-          fx:controller="com.ser515.ScrumRunner.controller.HomeScreenController"
+          fx:controller="com.ser515.ScrumRunner.controller.ButtonActionsController"
           stylesheets="@../../css/home.css">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -45,7 +45,7 @@
                 alignment="CENTER_RIGHT"
                 contentDisplay="CENTER"
                 mnemonicParsing="false" text="Start Game"
-                onAction="#handleStartButton"
+                onAction="#startGame"
                 GridPane.columnIndex="1"
                 GridPane.rowIndex="1">
             <GridPane.margin>
@@ -59,13 +59,13 @@
                 mnemonicParsing="false"
                 styleClass="btnEnd"
                 text="Exit"
-                onAction="#handleExitButton"
+                onAction="#exitGame"
                 GridPane.columnIndex="3"
                 GridPane.halignment="RIGHT"
                 GridPane.rowIndex="1" />
         <Label styleClass="labelTitle" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="ScrumRunner" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.halignment="CENTER">            <font>
-                <Font size="30.0" />
-            </font>
+            <Font size="30.0" />
+        </font>
         </Label>
     </children>
 </GridPane>
