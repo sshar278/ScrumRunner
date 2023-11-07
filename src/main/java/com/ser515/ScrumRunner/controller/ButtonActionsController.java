@@ -5,7 +5,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
 import org.springframework.stereotype.Controller;
+
 
 import java.io.IOException;
 import java.util.Objects;
@@ -17,6 +19,8 @@ public class ButtonActionsController {
     private Button startGameButton;
     @FXML
     private Button btnDiceRoll;
+    @FXML
+    private Button btnEnd;
 
     @FXML
     private void startGame() throws IOException {
@@ -48,7 +52,10 @@ public class ButtonActionsController {
     }
 
     @FXML
-    private void exitGame() throws IOException {
-        System.out.println("Exit game");
+    private void exitGame(ActionEvent event) {
+        System.out.println("Exiting game....");
+        Stage stage = (Stage) btnEnd.getScene().getWindow();
+        stage.close();
+
     }
 }
