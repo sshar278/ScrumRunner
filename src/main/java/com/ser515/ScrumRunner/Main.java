@@ -1,6 +1,6 @@
 package com.ser515.ScrumRunner;
 
-import com.ser515.ScrumRunner.controller.HomeScreenController;
+import com.ser515.ScrumRunner.controller.ButtonActionsController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-
 
 @SpringBootApplication
 public class Main extends Application {
@@ -22,24 +21,33 @@ public class Main extends Application {
     }
 
     @Override
-    public void init() throws Exception {
-        configurableApplicationContext= SpringApplication.run(Main.class);
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Main.fxml"));
-        fxmlLoader.setController(new HomeScreenController());
-        parent= fxmlLoader.load();
+    public void init() {
+        configurableApplicationContext = SpringApplication.run(Main.class);
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setControllerFactory(configurableApplicationContext::getBean);
+        
+        try {
+            fxmlLoader.setLocation(getClass().getResource("/fxml/Main.fxml"));
+            parent = fxmlLoader.load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setScene(new Scene(parent,800, 600));
-        primaryStage.show();
+        primaryStage.setScene(new Scene(parent, 800, 600));
         primaryStage.setTitle("ScrumRunner");
-        primaryStage.show();
+        
+        // Retrieve the controller from the Spring context and set the primary stage
+        ButtonActionsController controller = configurableApplicationContext.getBean(ButtonActionsController.class);
+        controller.setPrimaryStage(primaryStage);
 
+        primaryStage.show();
     }
 
     @Override
-    public void stop() throws Exception {
+    public void stop() {
         configurableApplicationContext.close();
     }
 }
