@@ -12,24 +12,25 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.effect.Bloom?>
 
-    <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<?import javafx.scene.shape.Circle?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.LoggerTabController" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <children>
-        <ImageView
-                fx:id="imageView"
-                fitHeight="600"
-                fitWidth="520.0"
-                layoutX="61.0"
-                layoutY="83.0"
-                pickOnBounds="true"
-                preserveRatio="true"
-        >
-            <image>
-                <Image
-                        url="@../../assets/Low_Fidelity_Diagram.png"
-                        backgroundLoading="true"
-                />
-            </image>
-        </ImageView>
+<!--        <ImageView-->
+<!--                fx:id="imageView"-->
+<!--                fitHeight="600"-->
+<!--                fitWidth="520.0"-->
+<!--                layoutX="61.0"-->
+<!--                layoutY="83.0"-->
+<!--                pickOnBounds="true"-->
+<!--                preserveRatio="true"-->
+<!--        >-->
+<!--            <image>-->
+<!--                <Image-->
+<!--                        url="@../../assets/Low_Fidelity_Diagram.png"-->
+<!--                        backgroundLoading="true"-->
+<!--                />-->
+<!--            </image>-->
+<!--        </ImageView>-->
         <ImageView fx:id="diceImage" fitHeight="200.0" fitWidth="200.0" layoutX="692.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../../assets/img.png" />
@@ -51,10 +52,11 @@
             <Bloom />
         </effect>
         </Label>
-        <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnOnClickTest" text="Start Game" textAlignment="CENTER">
-        <font>
-            <Font name="System Bold" size="14.0" />
-        </font>
-        </Button>
+<!--        <Button fx:id="btnSpring" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnOnClickTest" text="Start Game" textAlignment="CENTER">-->
+<!--        <font>-->
+<!--            <Font name="System Bold" size="14.0" />-->
+<!--        </font>-->
+<!--        </Button>-->
+        <Circle fx:id="userPiece" radius="10" fill="BLUE" layoutX="100.0" layoutY="100.0" />
     </children>
     </AnchorPane>
