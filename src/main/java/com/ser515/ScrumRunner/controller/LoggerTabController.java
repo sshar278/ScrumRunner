@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.control.Tab;
+import javafx.scene.shape.Circle;
 import org.springframework.stereotype.Component;
 import java.io.File;
 import java.util.Objects;
@@ -23,6 +24,7 @@ import java.util.Random;
         public ImageView imageView1;
         public ImageView diceImage;
         public Button rollButton;
+        public Circle userPiece;
 
         @FXML
         private Button btnSpring;

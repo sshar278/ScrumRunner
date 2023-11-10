@@ -179,7 +179,7 @@
                         </Label>
                         <ImageView fitHeight="105.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="assets/arrow.jpg" />
+                              <Image url="@../../assets/arrow.jpg" />
                            </image>
                         </ImageView>
                            </children>
