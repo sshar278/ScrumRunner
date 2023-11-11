@@ -1,314 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-       <BorderPane prefHeight="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-   
-           <!-- Center Content -->
-           <center>
-               <Label style="-fx-font-size: 32px;" text="SCRUM RUNNER">
-               <font>
-                  <Font name="Comic Sans MS Bold" size="27.0" />
-               </font></Label>
-           </center>
-   
-           <!-- Top Tiles -->
-           <top>
-               <HBox prefHeight="124.0" prefWidth="795.0" spacing="0">
-                   <children>
-                       <VBox prefHeight="124.0" prefWidth="152.0" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Milestone #2">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="BUG #1">
-                                  <text>
-                                      <Rectangle fill="#FF0000" height="76.0" width="20.0" />
-                                  </text>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#FF0000" height="24.0" width="92.0" />
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Stand Up">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#FF0000" height="24.0" width="92.0" />
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Commit Code" wrapText="true">
-                                  <text>
-                                      <Rectangle fill="#FFC0CC" height="76.0" width="20.0" />
-                                  </text>
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font></Label>
-                        <Rectangle fill="#800000" height="24.0" width="100.0" />
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="BUG #2">
-                                  <text>
-                                      <Rectangle fill="#FF0000" height="76.0" width="20.0" />
-                                  </text>
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font></Label>
-                        <Rectangle fill="#FF0000" height="23.0" width="93.0" />
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Raise A PR">
-                                  <text>
-                                      <Rectangle fill="#FFC0CC" height="76.0" width="20.0" />
-                                  </text>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#800000" height="24.0" width="100.0" />
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="124.0" prefWidth="167.0" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="94.0" prefWidth="134.0" text="Sprint Backlog">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                   </children>
-   
-               </HBox>
-           </top>
-   
-           <!-- Right Tiles -->
-           <right>
-               <VBox prefHeight="168.0" spacing="0">
-                   <children>
-                       <!-- Sample Tile -->
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#00800F" height="76.0" width="20.0" />
-                               <Label prefHeight="76.0" prefWidth="136.0" text="Task #1">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font></Label>
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#FFA500" height="76.0" width="20.0" />
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Work On Assigned Task" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                        <Rectangle fill="#00800F" height="78.0" width="19.0" />
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Deliver KT">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="157.0" prefWidth="163.0" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                        <Rectangle fill="#00800F" height="154.0" width="19.0" />
-                               <Label prefHeight="99.0" prefWidth="137.0" text="MileStone #1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#00800F" height="79.0" width="19.0" />
-                               <Label prefHeight="77.0" prefWidth="114.0" text="TASK #2" textAlignment="JUSTIFY">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                        <Rectangle fill="#FFA500" height="76.0" width="20.0" />
-                               <Label prefHeight="65.0" prefWidth="124.0" text="Work on Assigned Task" textAlignment="RIGHT" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </HBox>
-                   </children>
-   
-               </VBox>
-           </right>
-   
-           <!-- Bottom Tiles -->
-           <bottom>
-               <HBox prefHeight="124.0" prefWidth="795.0" spacing="0">
-                   <children>
-                       <VBox prefHeight="124.0" prefWidth="152.0" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label alignment="CENTER" prefHeight="33.0" prefWidth="147.0" text="Start/End Sprint" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="105.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../assets/arrow.jpg" />
-                           </image>
-                        </ImageView>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#0000FF" height="20" width="100" />
-                               <Label alignment="CENTER" prefHeight="99.0" prefWidth="132.0" text="EPIC #1" wrapText="true">
-                                   <font>
-                                       <Font name="System Bold" size="18.0" />
-                                   </font>
-                               </Label>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#800000" height="20" width="100" />
-                               <Label prefHeight="99.0" prefWidth="132.0" text="User Story #1" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#0000FF" height="20" width="100" />
-                               <Label prefHeight="99.0" prefWidth="132.0" text="EPIC #2">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                        <Rectangle fill="#0000FF" height="20" width="100" />
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Stand Up">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Rectangle fill="#800000" height="20" width="100" />
-                               <Label prefHeight="99.0" prefWidth="132.0" text="USER STORY #2" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                       <VBox prefHeight="124.0" prefWidth="167.0" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="74.0" prefWidth="138.0" text="SPRINT PLANNING" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                           </children>
-                       </VBox>
-                   </children>
-   
-               </HBox>
-           </bottom>
-   
-           <!-- Left Tiles -->
-           <left>
-               <VBox prefHeight="152.0" prefWidth="150" spacing="0">
-                   <children>
-                       <!-- Sample Tile -->
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="USER STORY #3" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#800000" height="78.0" width="20.0" />
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="BUG #3">
-                                  <text>
-                                      <Rectangle fill="#FF0000" height="76.0" width="20.0" />
-                                  </text>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#FF0000" height="76.0" width="20.0" />
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="TASK #3">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#00800F" height="76.0" width="20.0" />
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="156.0" prefWidth="151.0" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="Go Back To Last Milestone" wrapText="true">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font></Label>
-                        <Rectangle fill="#FF0000" height="153.0" width="20.0" />
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="TASK #4">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font></Label>
-                        <Rectangle fill="#00800F" height="78.0" width="20.0" />
-                           </children>
-                       </HBox>
-                       <HBox prefHeight="80" prefWidth="100" style="-fx-border-color: black; -fx-background-color: #FFFFFF;">
-                           <children>
-                               <Label prefHeight="99.0" prefWidth="132.0" text="BUG #4">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font></Label>
-                        <Rectangle fill="#FF0000" height="76.0" width="20.0" />
-                           </children>
-                       </HBox>
-                   </children>
-   
-               </VBox>
-           </left>
-       </BorderPane>
-   </children>
-</AnchorPane>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+    </rowConstraints>
+
+    <Label style="-fx-background-color: #FFFFFF; -fx-border-color: black; -fx-alignment: center;" text="ScrumRunner" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+        <font>
+            <Font size="18" />
+        </font>
+    </Label>
+
+
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 7" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 4" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 8" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <ImageView fitHeight="100" fitWidth="100">
+                <image>
+                    <Image url="assets/arrow.jpg"/>
+                </image>
+            </ImageView>
+
+            <Label text="Start/End" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-alignment: center;" textAlignment="CENTER">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </VBox>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="40.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                   <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <children>
+          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="ScrumRunner" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+              <font>
+                  <Font size="15.0" />
+              </font>
+          </Label>
+      </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="      Bug 1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+
+    </Pane>
+
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 5" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 4" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+
+
+</GridPane>
