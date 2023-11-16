@@ -10,7 +10,9 @@
 
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.VBox?>
-<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/21" fx:controller="com.ser515.ScrumRunner.controller.GameBoardController" xmlns:fx="http://javafx.com/fxml/1">
 
     <columnConstraints>
         <ColumnConstraints percentWidth="20" />
@@ -111,13 +113,18 @@
     </Pane>
     <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
     <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="2">
-      <children>
-          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="ScrumRunner" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+        <HBox spacing="10">
+              <ImageView fx:id="diceImage" fitHeight="80.0" fitWidth="80.0" layoutX="3.0" pickOnBounds="true" preserveRatio="flase">
+                <image>
+                    <Image url="@../../assets/img.png" />
+                </image>
+           </ImageView>
+          <Button fx:id="rollButton" layoutX="154.0" layoutY="93.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="50.0" text="Roll" onAction="#roll">
               <font>
-                  <Font size="15.0" />
+                  <Font size="10.0" />
               </font>
-          </Label>
-      </children>
+          </Button>
+        </HBox>
     </Pane>
     <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
     <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
