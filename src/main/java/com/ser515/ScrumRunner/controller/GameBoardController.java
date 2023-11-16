@@ -1,5 +1,7 @@
 package com.ser515.ScrumRunner.controller;
 
+import javafx.animation.TranslateTransition;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -8,7 +10,9 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.control.Tab;
+import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
+import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 import java.io.File;
 import java.util.Objects;
@@ -22,6 +26,7 @@ public class GameBoardController {
     public ImageView diceImage;
     public Button rollButton;
     public Circle userPiece;
+    public GridPane gridPane;
 
     @FXML
     private Button btnSpring;
@@ -48,6 +53,8 @@ public class GameBoardController {
             {0.0, 384.0},  // Midpoint of Box at Row 4, Column 0
     };
 
+    private int currentPosition = 0;
+
     @FXML
     public void roll(ActionEvent actionEvent) {
 //        System.out.println("Button Clicked");
@@ -59,11 +66,12 @@ public class GameBoardController {
                 for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
                     Random random = new Random();
-//                    System.out.println(random.nextInt(6)+1);
-                    File file = new File("@../../assets/dice-" + (random.nextInt(6) + 1) + ".png");
+                    int diceValue = random.nextInt(6) + 1;
+                    File file = new File("@../../assets/dice-" + diceValue + ".png");
                     diceImage.setImage(new Image(String.valueOf(file)));
 //                    System.out.println(file);
                     Thread.sleep(50);
+                    moveUserPiece(diceValue);
                 }
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {
@@ -72,5 +80,28 @@ public class GameBoardController {
         });
         thread.start();
 
+    }
+
+    private void moveUserPiece(int steps) {
+        if (steps < 1) {
+            System.out.println("Invalid number of steps.");
+            return;
+        }
+
+        int totalSteps = midpoints.length;
+        int destinationIndex = (currentPosition + steps) % totalSteps;
+        double[] destination = midpoints[destinationIndex];
+
+        Platform.runLater(() -> {
+            gridPane.getChildren().remove(userPiece);
+            gridPane.getChildren().add(userPiece);
+        });
+
+        TranslateTransition transition = new TranslateTransition(Duration.seconds(1), userPiece);
+        transition.setToX(destination[0]);
+        transition.setToY(destination[1]);
+        transition.play();
+
+        currentPosition = destinationIndex;
     }
 }

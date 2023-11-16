@@ -15,6 +15,7 @@
 <?import javafx.scene.shape.Circle?>
 <GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/21" fx:controller="com.ser515.ScrumRunner.controller.GameBoardController" xmlns:fx="http://javafx.com/fxml/1">
 
+
     <columnConstraints>
         <ColumnConstraints percentWidth="20" />
         <ColumnConstraints percentWidth="20" />
@@ -68,7 +69,8 @@
     </Pane>
     <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="4">
         <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
-            <Circle fx:id="userPiece" radius="10" fill="BLUE" />
+            <Circle fx:id="userPiece" radius="10" fill="BLUE" layoutX="10.0" layoutY="384.0"/>
+
             <ImageView fitHeight="100" fitWidth="100">
                 <image>
                     <Image url="@../../assets/arrow.jpg"/>
