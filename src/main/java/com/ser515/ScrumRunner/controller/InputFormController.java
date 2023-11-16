@@ -55,6 +55,10 @@ public class InputFormController {
             Parent nextRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/GameBoard/GameBoard.fxml")));
             Scene scene = new Scene(nextRoot);
             Stage stage = (Stage) submitButton.getScene().getWindow(); // get the current stage
+            // Set the minimum window size
+            stage.setMinWidth(800);
+            stage.setMinHeight(600);
+
             stage.setScene(scene);
             stage.show();
     }
