@@ -1,19 +1,32 @@
 plugins {
-    id 'org.springframework.boot' version '1.5.4.RELEASE'
+    id 'org.springframework.boot' version '2.5.0' // or later
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
 }
 
 group 'com.ser515'
 version '1.0-SNAPSHOT'
-
-apply plugin: 'java'
-
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
+
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter:1.5.4.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.5.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Other necessary dependencies...
+
+    // JUnit Jupiter
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    // Mockito
+    testImplementation 'org.mockito:mockito-core:3.6.28'
+    testImplementation 'org.mockito:mockito-inline:3.6.28'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.6.28'
+}
+
+test {
+    useJUnitPlatform()
 }
