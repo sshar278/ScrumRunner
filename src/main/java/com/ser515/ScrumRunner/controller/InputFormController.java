@@ -16,17 +16,17 @@ import java.util.Objects;
 public class InputFormController {
 
     @FXML
-    private TextField nameTextField;
+    TextField nameTextField;
     @FXML
-    private TextField sprintsTextField;
+    TextField sprintsTextField;
     @FXML
-    private TextField durationTextField;
+    TextField durationTextField;
     @FXML
-    private TextField capacityTextField;
+    TextField capacityTextField;
     @FXML
-    private ChoiceBox<String> rolesChoiceBox;
+    ChoiceBox<String> rolesChoiceBox;
     @FXML
-    private Button submitButton;
+    Button submitButton;
 
     @FXML
     public void initialize() {
