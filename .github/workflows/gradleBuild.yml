@@ -16,6 +16,6 @@ jobs:
     - uses: gradle/gradle-build-action@v2
       id: setup-gradle
       with:
-        gradle-version: 4.2.1
+        gradle-version: 6.8.1
     - run: gradle build --dry-run # just test build configuration
     - run: echo "The release-candidate version was ${{ steps.setup-gradle.outputs.gradle-version }}"
