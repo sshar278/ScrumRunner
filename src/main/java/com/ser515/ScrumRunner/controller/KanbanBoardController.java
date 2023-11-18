@@ -2,8 +2,12 @@ package com.ser515.ScrumRunner.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class KanbanBoardController {
+    @FXML
+    private Stage primaryStage; // Field to store the primary stage
+
     @FXML
     private ListView<String> toDoListView;
 
@@ -23,11 +27,11 @@ public class KanbanBoardController {
     private TextField doneInput;
 
     public void addToDo() {
-      String task = toDoInput.getText();
-      if(!task.isEmpty()){
-          toDoListView.getItems().add(task);
-          toDoInput.clear();
-      }
+        String task = toDoInput.getText();
+        if(!task.isEmpty()){
+            toDoListView.getItems().add(task);
+            toDoInput.clear();
+        }
 
     }
 
@@ -45,5 +49,9 @@ public class KanbanBoardController {
             doneListView.getItems().add(task);
             doneInput.clear();
         }
+    }
+
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
     }
 }
