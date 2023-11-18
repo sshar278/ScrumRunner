@@ -16,11 +16,11 @@ public class ButtonActionsController {
 
 
     @FXML
-    private Button startGameButton;
+    Button startGameButton;
     @FXML
     private Button btnDiceRoll;
     @FXML
-    private Button btnEnd;
+    Button btnEnd;
 
     @FXML
     private Stage primaryStage; // Field to store the primary stage
