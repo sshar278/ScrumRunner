@@ -36,23 +36,25 @@ public class GameBoardController {
     private Label lblSpring;
 
     private final double[][] midpoints = {
-            {0.0, 384.0},  // Midpoint of Box at Row 4, Column 0
-            {96.0, 384.0}, // Midpoint of Box at Row 4, Column 1
-            {192.0, 384.0}, // Midpoint of Box at Row 4, Column 2
-            {288.0, 384.0}, // Midpoint of Box at Row 4, Column 3
-            {384.0, 384.0}, // Midpoint of Box at Row 4, Column 4
-            {384.0, 288.0}, // Midpoint of Box at Row 3, Column 4
-            {384.0, 192.0}, // Midpoint of Box at Row 2, Column 4
-            {384.0, 96.0}, // Midpoint of Box at Row 1, Column 4
-            {384.0, 0.0}, // Midpoint of Box at Row 0, Column 4
-            {288.0, 0.0}, // Midpoint of Box at Row 0, Column 3
-            {192.0, 0.0}, // Midpoint of Box at Row 0, Column 2
-            {96.0, 0.0}, // Midpoint of Box at Row 0, Column 1
-            {0.0, 0.0},  // Midpoint of Box at Row 0, Column 0
-            {0.0, 96.0},  // Midpoint of Box at Row 1, Column 0
-            {0.0, 192.0},  // Midpoint of Box at Row 2, Column 0
-            {0.0, 288.0},  // Midpoint of Box at Row 3, Column 0
-            {0.0, 384.0},  // Midpoint of Box at Row 4, Column 0
+        // List of coordinates where the user piece is supposed to be moved to
+           {58.0, 440.0},   //Start
+           {218.0, 440.0},
+           {378.0, 440.0},
+           {528.0, 440.0},
+           {688.0, 440.0},  //Corner Tile
+           {688.0, 330.0},
+           {688.0, 220.0},
+           {688.0, 110.0},
+           {688.0, 8.0},   //Corner Tile
+           {528.0, 8.0},
+           {378.0, 8.0},
+           {218.0, 8.0},
+           {58.0, 8.0},    //Corner Tile
+           {58.0, 110.0},
+           {58.0, 220.0},
+           {58.0, 330.0},
+           {58.0, 440.0}
+
     };
 
     private int currentPosition = 0;
@@ -99,6 +101,7 @@ public class GameBoardController {
         int totalSteps = midpoints.length;
         int destinationIndex = (currentPosition + steps) % totalSteps;
         double[] destination = midpoints[destinationIndex];
+        System.out.println("coordinates: "+destination[0] +" "+ destination[1]);
 
         Platform.runLater(() -> {
             gridPane.getChildren().remove(userPiece);
