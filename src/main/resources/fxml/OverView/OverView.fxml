@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400" prefWidth="600" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Sprint Summary Heading -->
+    <Label alignment="CENTER" style="-fx-font-size: 18pt; -fx-font-weight: bold; -fx-padding: 10,0,0,10" text="Sprint Summary">
+      <VBox.margin>
+         <Insets left="180.0" />
+      </VBox.margin></Label>
+
+    <!-- Name Field -->
+    <HBox>
+        <Label style="-fx-padding: 10,0,0,10" text="Name :" />
+        <TextField fx:id="nameLabel" disable="true" style="-fx-padding: 10,0,0,10" text="John">
+         <HBox.margin>
+            <Insets left="75.0" />
+         </HBox.margin></TextField>
+    </HBox>
+
+    <!-- No of User Stories Field -->
+    <HBox>
+        <Label style="-fx-padding: 10,0,0,10" text="No of User Stories :" />
+        <TextField fx:id="userStoriesLabel" disable="true" style="-fx-padding: 10,0,0,10" text="7">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></TextField>
+    </HBox>
+
+    <!-- No of Bugs Resolved Field -->
+    <HBox>
+        <Label style="-fx-padding: 10,0,0,10" text="No of Bugs Resolved :" />
+        <TextField fx:id="bugsResolvedLabel" disable="true" style="-fx-padding: 10,0,0,10" text="10" />
+    </HBox>
+
+</VBox>
