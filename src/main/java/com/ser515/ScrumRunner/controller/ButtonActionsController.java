@@ -71,4 +71,10 @@ public class ButtonActionsController {
         stage.close();
 
     }
+
+    // startSimulator function to be completed
+    @FXML
+    private void startSimulator(ActionEvent event){
+        System.out.println("Working on Game Simulation.......");
+    }
 }
