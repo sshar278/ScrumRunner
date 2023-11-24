@@ -17,6 +17,7 @@ import javafx.scene.shape.Circle;
 import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
@@ -34,6 +35,9 @@ public class GameBoardController {
     private Button btnSpring;
     @FXML
     private Label lblSpring;
+
+    // Global array to store user's position
+    public ArrayList<Integer> userPos = new ArrayList<>();
 
     private final double[][] midpoints = {
         // List of coordinates where the user piece is supposed to be moved to
@@ -53,7 +57,7 @@ public class GameBoardController {
            {58.0, 110.0},
            {58.0, 220.0},
            {58.0, 330.0},
-           {58.0, 440.0}
+           //{58.0, 440.0}
 
     };
 
@@ -66,17 +70,19 @@ public class GameBoardController {
 
         Thread thread = new Thread(() -> {
             System.out.println("Thread Running");
+            Random random = new Random();
+            int diceValue = random.nextInt(6) + 1;
             try {
                 for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
-                    Random random = new Random();
-                    int diceValue = random.nextInt(6) + 1;
+                    diceValue = random.nextInt(6) + 1;
                     File file = new File("@../../assets/dice-" + diceValue + ".png");
                     diceImage.setImage(new Image(String.valueOf(file)));
 //                    System.out.println(file);
                     Thread.sleep(50);
-                    moveUserPiece(diceValue);
                 }
+                moveUserPiece(diceValue);
+                userPos.add(diceValue);
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -98,8 +104,13 @@ public class GameBoardController {
             return;
         }
 
-        int totalSteps = midpoints.length;
-        int destinationIndex = (currentPosition + steps) % totalSteps;
+        // int totalSteps = midpoints.length;
+        int destinationIndex = (currentPosition + steps)%16;
+        System.out.println("destinationIndex: "+destinationIndex);
+        if (destinationIndex >= midpoints.length) {
+            // destinationIndex = destinationIndex - midpoints.length;
+        }
+
         double[] destination = midpoints[destinationIndex];
         System.out.println("coordinates: "+destination[0] +" "+ destination[1]);
 
