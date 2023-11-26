@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.control.Tab;
@@ -34,6 +35,9 @@ public class GameBoardController {
     private Button btnSpring;
     @FXML
     private Label lblSpring;
+    @FXML
+    public Label diceValueLabel;
+    private int diceValue;
 
     private final double[][] midpoints = {
         // List of coordinates where the user piece is supposed to be moved to
@@ -63,20 +67,20 @@ public class GameBoardController {
     public void roll(ActionEvent actionEvent) {
         System.out.println("Button Clicked");
         rollButton.setDisable(true);
-
+        diceValueLabel.setVisible(true);
         Thread thread = new Thread(() -> {
             System.out.println("Thread Running");
             Random random = new Random();
-            int diceValue = random.nextInt(6) + 1;
+            diceValue = random.nextInt(6) + 1;
             try {
                 for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
                     diceValue = random.nextInt(6) + 1;
                     File file = new File("@../../assets/dice-" + diceValue + ".png");
                     diceImage.setImage(new Image(String.valueOf(file)));
-//                    System.out.println(file);
                     Thread.sleep(50);
                 }
+                System.out.println("dICE VALUE IS: "+ diceValue);
                 currentPosition = 0;
                 moveUserPiece(diceValue);
                 rollButton.setDisable(false);
@@ -111,6 +115,8 @@ public class GameBoardController {
         System.out.println("coordinates: "+destination[0] +" "+ destination[1]);
 
         Platform.runLater(() -> {
+            System.out.println("dICE VALUE IS: "+ diceValue);
+            diceValueLabel.setText(String.valueOf(diceValue));
             gridPane.getChildren().remove(userPiece);
             gridPane.getChildren().add(userPiece);
         });
@@ -121,5 +127,5 @@ public class GameBoardController {
         transition.play();
 
         currentPosition = destinationIndex;
-    }
+}
 }
