@@ -14,9 +14,9 @@ public class TimerUIController {
     @FXML
     public Label timerLabel;
 
+
     @FXML
     public Button playButton;
-
     @FXML
     public Button resetButton;
 
