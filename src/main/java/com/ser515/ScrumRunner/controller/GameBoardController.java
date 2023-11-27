@@ -4,20 +4,24 @@ import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
-import javafx.scene.control.Tab;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 import java.io.File;
-import java.util.Objects;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 
@@ -31,9 +35,16 @@ public class GameBoardController {
     public GridPane gridPane;
 
     @FXML
-    private Button btnSpring;
+    private Map<String, String> mcqMap;
+
     @FXML
-    private Label lblSpring;
+    private Stage primaryStage;
+
+
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
+
 
     private final double[][] midpoints = {
         // List of coordinates where the user piece is supposed to be moved to
@@ -88,8 +99,23 @@ public class GameBoardController {
 
     @FXML
     private void handlePaneClick(MouseEvent event) {
+
         Pane clickedPane = (Pane) event.getSource();
         System.out.println("Clicked Pane ID: " + clickedPane.getId());
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ModalForm/ModalForm.fxml"));
+            Parent root = loader.load();
+
+            Stage newStage = new Stage();
+            newStage.setTitle("Questions");
+
+            Scene scene = new Scene(root);
+            newStage.setScene(scene);
+
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void moveUserPiece(int steps) {
