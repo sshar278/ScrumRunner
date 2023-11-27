@@ -64,7 +64,7 @@ public class GameBoardController {
            {58.0, 110.0},
            {58.0, 220.0},
            {58.0, 330.0},
-           {58.0, 440.0}
+           //{58.0, 440.0}
 
     };
 
@@ -72,22 +72,24 @@ public class GameBoardController {
 
     @FXML
     public void roll(ActionEvent actionEvent) {
-//        System.out.println("Button Clicked");
+        System.out.println("Button Clicked");
         rollButton.setDisable(true);
 
         Thread thread = new Thread(() -> {
             System.out.println("Thread Running");
+            Random random = new Random();
+            int diceValue = random.nextInt(6) + 1;
             try {
                 for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
-                    Random random = new Random();
-                    int diceValue = random.nextInt(6) + 1;
+                    diceValue = random.nextInt(6) + 1;
                     File file = new File("@../../assets/dice-" + diceValue + ".png");
                     diceImage.setImage(new Image(String.valueOf(file)));
 //                    System.out.println(file);
                     Thread.sleep(50);
-                    moveUserPiece(diceValue);
                 }
+                currentPosition = 0;
+                moveUserPiece(diceValue);
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -124,8 +126,13 @@ public class GameBoardController {
             return;
         }
 
-        int totalSteps = midpoints.length;
-        int destinationIndex = (currentPosition + steps) % totalSteps;
+        // int totalSteps = midpoints.length;
+        int destinationIndex = (currentPosition + steps)%16;
+        System.out.println("destinationIndex: "+destinationIndex);
+        if (destinationIndex >= midpoints.length) {
+            // destinationIndex = destinationIndex - midpoints.length;
+        }
+
         double[] destination = midpoints[destinationIndex];
         System.out.println("coordinates: "+destination[0] +" "+ destination[1]);
 
@@ -134,11 +141,11 @@ public class GameBoardController {
             gridPane.getChildren().add(userPiece);
         });
 
-        TranslateTransition transition = new TranslateTransition(Duration.seconds(1), userPiece);
+        TranslateTransition transition = new TranslateTransition(Duration.seconds(1.5), userPiece);
         transition.setToX(destination[0]);
         transition.setToY(destination[1]);
         transition.play();
 
         currentPosition = destinationIndex;
-    }
+    }
 }
