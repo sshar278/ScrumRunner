@@ -38,6 +38,7 @@ public class GameBoardController {
 
     // Global array to store user's position
     public ArrayList<Integer> userPos = new ArrayList<>();
+    public ArrayList<Integer> diceValues = new ArrayList<>();
 
     private final double[][] midpoints = {
         // List of coordinates where the user piece is supposed to be moved to
@@ -83,6 +84,7 @@ public class GameBoardController {
                 }
                 moveUserPiece(diceValue);
                 userPos.add(diceValue);
+                diceValues.add(diceValue);
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {
                 e.printStackTrace();
