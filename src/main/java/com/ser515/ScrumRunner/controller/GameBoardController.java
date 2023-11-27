@@ -77,7 +77,6 @@ public class GameBoardController {
 //                    System.out.println(file);
                     Thread.sleep(50);
                 }
-                currentPosition = 0;
                 moveUserPiece(diceValue);
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {
