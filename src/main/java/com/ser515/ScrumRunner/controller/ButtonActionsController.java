@@ -16,11 +16,11 @@ public class ButtonActionsController {
 
 
     @FXML
-    private Button startGameButton;
+    Button startGameButton;
     @FXML
     private Button btnDiceRoll;
     @FXML
-    private Button btnEnd;
+    Button btnEnd;
 
     @FXML
     private Stage primaryStage; // Field to store the primary stage
@@ -70,5 +70,11 @@ public class ButtonActionsController {
         Stage stage = (Stage) btnEnd.getScene().getWindow();
         stage.close();
 
+    }
+
+    // startSimulator function to be completed
+    @FXML
+    private void startSimulator(ActionEvent event){
+        System.out.println("Working on Game Simulation.......");
     }
 }

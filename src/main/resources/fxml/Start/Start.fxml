@@ -31,6 +31,7 @@
                 </Button>
                
         <Button fx:id="btnEnd" maxWidth="120" mnemonicParsing="false" onAction="#exitGame" prefHeight="50" prefWidth="100" styleClass="btnEnd" text="Exit" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+        <Button fx:id="btnSimulator" maxWidth="160" mnemonicParsing="false" onAction="#startSimulator" prefHeight="50" prefWidth="100" styleClass="btnSimulator" text="Start Simulator" textFill="white" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
         <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" styleClass="labelTitle" text="ScrumRunner" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.halignment="CENTER">            <font>
             <Font size="30.0" />
         </font>
@@ -42,5 +43,6 @@
             <Insets top="150.0" />
          </GridPane.margin>
         </Label>
+      <Button id="GameTutorialBtn" fx:id="GameTutorialBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="117.0" text="Game Tutorial" GridPane.columnIndex="3" GridPane.rowIndex="2" />
     </children>
 </GridPane>

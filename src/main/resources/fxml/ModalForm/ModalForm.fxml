@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.ModalFormController">
+    <children>
+     <!-- Timer UI -->
+        <VBox alignment="center" spacing="10" style="-fx-background-color: #9ACD32;" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <children>
+                <AnchorPane prefHeight="48.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="timerLabel" layoutY="20.0" prefHeight="88.0" prefWidth="590.0" style="-fx-font-size: 60px; -fx-background-color: black; -fx-text-fill: white; -fx-alignment: center;" text="00:00">
+                            <font>
+                                <Font size="42.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <HBox alignment="center" prefHeight="52.0" prefWidth="502.0" spacing="20">
+                    <children>
+                        <Button fx:id="playButton" contentDisplay="CENTER" onAction="#handlePlay" prefHeight="25.0" prefWidth="117.0" text="PLAY">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="resetButton" onAction="#handleReset" prefHeight="39.0" prefWidth="121.0" text="RESET">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="526.0" text="" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <RadioButton fx:id="option1RadioButton" contentDisplay="CENTER" prefHeight="18.0" prefWidth="586.0" text="" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <RadioButton fx:id="option2RadioButton" prefHeight="18.0" prefWidth="590.0" text="" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <RadioButton fx:id="option3RadioButton" prefWidth="590.0" text="" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+        <RadioButton fx:id="option4RadioButton" contentDisplay="CENTER" prefWidth="590.0" text="" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+        <Button fx:id="submitButton" text="Submit" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" onAction="#handleSubmit"/>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="373.0" minWidth="10.0" prefWidth="300.0" /> <!-- First column will expand -->
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="300.0" minWidth="10.0" prefWidth="300.0" /> <!-- Third column will expand -->
+    </columnConstraints>
+    <rowConstraints>
+        <!-- Add or adjust row constraints as needed for spacing -->
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" />
+      <RowConstraints percentHeight="0.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" /> <!-- Last row will expand -->
+    </rowConstraints>
+<!--    <Button fx:id="submitButton" text="Submit" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" onAction="#handleSubmit"/>-->
+</GridPane>

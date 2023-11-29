@@ -12,21 +12,21 @@ import java.util.TimerTask;
 public class TimerUIController {
 
     @FXML
-    private Label timerLabel;
+    public Label timerLabel;
+
 
     @FXML
-    private Button playButton;
+    public Button playButton;
+    @FXML
+    public Button resetButton;
+
+    public Timer timer;
+    public TimerTask timerTask;
+    public int secondsPassed = 0;
+    public boolean running = false;
 
     @FXML
-    private Button resetButton;
-
-    private Timer timer;
-    private TimerTask timerTask;
-    private int secondsPassed = 0;
-    private boolean running = false;
-
-    @FXML
-    private void handlePlay() {
+    public void handlePlay() {
         if (!running) {
             running = true;
             playButton.setText("Pause");
@@ -39,7 +39,7 @@ public class TimerUIController {
     }
 
     @FXML
-    private void handleReset() {
+    public void handleReset() {
         running = false;
         playButton.setText("Start");
         resetTimer();
@@ -50,11 +50,11 @@ public class TimerUIController {
         setupTimer();
     }
 
-    private void setupTimer() {
+    public void setupTimer() {
         timer = new Timer();
     }
 
-    private void startTimer() {
+    public void startTimer() {
         timerTask = new TimerTask() {
             @Override
             public void run() {
@@ -65,11 +65,11 @@ public class TimerUIController {
         timer.scheduleAtFixedRate(timerTask, 1000, 1000);
     }
 
-    private void pauseTimer() {
+    public void pauseTimer() {
         timerTask.cancel();
     }
 
-    private void resetTimer() {
+    public void resetTimer() {
         if (timerTask != null) {
             timerTask.cancel();
         }
@@ -77,7 +77,7 @@ public class TimerUIController {
         timerLabel.setText(formatTime(secondsPassed));
     }
 
-    private String formatTime(int totalSeconds) {
+    public String formatTime(int totalSeconds) {
         int hours = totalSeconds / 3600;
         int minutes = (totalSeconds % 3600) / 60;
         int seconds = totalSeconds % 60;
