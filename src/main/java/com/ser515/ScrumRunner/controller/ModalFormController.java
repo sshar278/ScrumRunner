@@ -2,11 +2,15 @@ package com.ser515.ScrumRunner.controller;
 
 import com.ser515.ScrumRunner.model.QuestionForm;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
-public class ModalFromController {
+public class ModalFormController {
+
 
     @FXML
     private RadioButton option1RadioButton;
@@ -16,8 +20,19 @@ public class ModalFromController {
     private RadioButton option3RadioButton;
     @FXML
     private RadioButton option4RadioButton;
+    @FXML
+    private Label questionLabel;
 
     private QuestionForm currentQuestion;
+
+    @FXML
+    private void initialize(){
+            questionLabel.setText("How do you do?");
+            option1RadioButton.setText("I opt 1");
+            option2RadioButton.setText("I opt 2");
+            option3RadioButton.setText("I opt 3");
+            option4RadioButton.setText("I opt 4");
+    }
 
     @FXML
     private void handleSubmit() {

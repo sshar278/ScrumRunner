@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.ModalFromController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.ModalFormController">
     <children>
-        <!-- Timer UI -->
+     <!-- Timer UI -->
         <VBox alignment="center" spacing="10" style="-fx-background-color: #9ACD32;" GridPane.columnSpan="2" GridPane.rowIndex="1">
             <children>
                 <AnchorPane prefHeight="48.0" prefWidth="600.0">
@@ -34,13 +34,12 @@
                 </HBox>
             </children>
         </VBox>
-        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="526.0" text="Select an option" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" style="-fx-margin-top: 200px;" />
-        <RadioButton fx:id="option1RadioButton" contentDisplay="CENTER" prefHeight="18.0" prefWidth="586.0" text="Option 1" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-        <RadioButton fx:id="option2RadioButton" prefHeight="18.0" prefWidth="590.0" text="Option 2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-        <RadioButton fx:id="option3RadioButton" prefWidth="590.0" text="Option 3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-        <RadioButton fx:id="option4RadioButton" contentDisplay="CENTER" prefWidth="590.0" text="Option 4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
-<!--      <Button mnemonicParsing="false" text="Submit" GridPane.rowIndex="7" />-->
-        <Button fx:id="submitButton" onAction="#handleSubmit" text="Submit" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+        <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="526.0" text="" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <RadioButton fx:id="option1RadioButton" contentDisplay="CENTER" prefHeight="18.0" prefWidth="586.0" text="" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <RadioButton fx:id="option2RadioButton" prefHeight="18.0" prefWidth="590.0" text="" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <RadioButton fx:id="option3RadioButton" prefWidth="590.0" text="" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+        <RadioButton fx:id="option4RadioButton" contentDisplay="CENTER" prefWidth="590.0" text="" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+        <Button fx:id="submitButton" text="Submit" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" onAction="#handleSubmit"/>
     </children>
     <columnConstraints>
         <ColumnConstraints hgrow="ALWAYS" maxWidth="373.0" minWidth="10.0" prefWidth="300.0" /> <!-- First column will expand -->

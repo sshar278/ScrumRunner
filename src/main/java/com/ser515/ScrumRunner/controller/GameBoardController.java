@@ -4,20 +4,25 @@ import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
-import javafx.scene.control.Tab;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 import java.io.File;
-import java.util.Objects;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 
@@ -31,9 +36,19 @@ public class GameBoardController {
     public GridPane gridPane;
 
     @FXML
-    private Button btnSpring;
+    private Map<String, String> mcqMap;
+
     @FXML
-    private Label lblSpring;
+    private Stage primaryStage;
+
+
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
+
+    @FXML
+    public Label diceValueLabel;
+    private int diceValue;
 
     private final double[][] midpoints = {
         // List of coordinates where the user piece is supposed to be moved to
@@ -63,18 +78,17 @@ public class GameBoardController {
     public void roll(ActionEvent actionEvent) {
         System.out.println("Button Clicked");
         rollButton.setDisable(true);
-
+        diceValueLabel.setVisible(true);
         Thread thread = new Thread(() -> {
             System.out.println("Thread Running");
             Random random = new Random();
-            int diceValue = random.nextInt(6) + 1;
+            diceValue = random.nextInt(6) + 1;
             try {
                 for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
                     diceValue = random.nextInt(6) + 1;
                     File file = new File("@../../assets/dice-" + diceValue + ".png");
                     diceImage.setImage(new Image(String.valueOf(file)));
-//                    System.out.println(file);
                     Thread.sleep(50);
                 }
                 moveUserPiece(diceValue);
@@ -89,8 +103,23 @@ public class GameBoardController {
 
     @FXML
     private void handlePaneClick(MouseEvent event) {
+
         Pane clickedPane = (Pane) event.getSource();
         System.out.println("Clicked Pane ID: " + clickedPane.getId());
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ModalForm/ModalForm.fxml"));
+            Parent root = loader.load();
+
+            Stage newStage = new Stage();
+            newStage.setTitle("Questions");
+
+            Scene scene = new Scene(root);
+            newStage.setScene(scene);
+
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void moveUserPiece(int steps) {
@@ -110,6 +139,8 @@ public class GameBoardController {
         System.out.println("coordinates: "+destination[0] +" "+ destination[1]);
 
         Platform.runLater(() -> {
+            System.out.println("dICE VALUE IS: "+ diceValue);
+            diceValueLabel.setText(String.valueOf(diceValue));
             gridPane.getChildren().remove(userPiece);
             gridPane.getChildren().add(userPiece);
         });
