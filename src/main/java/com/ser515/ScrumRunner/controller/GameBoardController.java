@@ -91,8 +91,6 @@ public class GameBoardController {
                     diceImage.setImage(new Image(String.valueOf(file)));
                     Thread.sleep(50);
                 }
-                System.out.println("dICE VALUE IS: "+ diceValue);
-                currentPosition = 0;
                 moveUserPiece(diceValue);
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {

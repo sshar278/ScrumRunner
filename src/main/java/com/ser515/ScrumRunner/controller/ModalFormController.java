@@ -49,4 +49,16 @@ public class ModalFormController {
         currentQuestion.setSelectedAnswer(selectedOption);
 
     }
+
+    @FXML
+    public void handlePlay() {
+       System.out.println("This will start the timer");
+    }
+
+    @FXML
+    public void handleReset() {
+        System.out.println("This will reset the timer");
+    }
+
+
 }
