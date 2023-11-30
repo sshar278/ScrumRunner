@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.control.Tab;
@@ -41,24 +42,24 @@ public class GameBoardController {
     public ArrayList<Integer> diceValues = new ArrayList<>();
 
     private final double[][] midpoints = {
-        // List of coordinates where the user piece is supposed to be moved to
-           {58.0, 440.0},   //Start
-           {218.0, 440.0},
-           {378.0, 440.0},
-           {528.0, 440.0},
-           {688.0, 440.0},  //Corner Tile
-           {688.0, 330.0},
-           {688.0, 220.0},
-           {688.0, 110.0},
-           {688.0, 8.0},   //Corner Tile
-           {528.0, 8.0},
-           {378.0, 8.0},
-           {218.0, 8.0},
-           {58.0, 8.0},    //Corner Tile
-           {58.0, 110.0},
-           {58.0, 220.0},
-           {58.0, 330.0},
-           //{58.0, 440.0}
+            // List of coordinates where the user piece is supposed to be moved to
+            {58.0, 440.0},   //Start
+            {218.0, 440.0},
+            {378.0, 440.0},
+            {528.0, 440.0},
+            {688.0, 440.0},  //Corner Tile
+            {688.0, 330.0},
+            {688.0, 220.0},
+            {688.0, 110.0},
+            {688.0, 8.0},   //Corner Tile
+            {528.0, 8.0},
+            {378.0, 8.0},
+            {218.0, 8.0},
+            {58.0, 8.0},    //Corner Tile
+            {58.0, 110.0},
+            {58.0, 220.0},
+            {58.0, 330.0},
+            //{58.0, 440.0}
 
     };
 
@@ -82,6 +83,7 @@ public class GameBoardController {
 //                    System.out.println(file);
                     Thread.sleep(50);
                 }
+                currentPosition = 0;
                 moveUserPiece(diceValue);
                 userPos.add(diceValue);
                 diceValues.add(diceValue);
