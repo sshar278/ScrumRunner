@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
+import java.util.Objects;
 
 @Controller
 public class ButtonActionsController {
@@ -74,7 +75,19 @@ public class ButtonActionsController {
 
     // startSimulator function to be completed
     @FXML
-    private void startSimulator(ActionEvent event){
-        System.out.println("Working on Game Simulation.......");
+    private void startSimulator(ActionEvent event) throws IOException{
+        try{
+            primaryStage.close();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/GameBoard/SimulatorBoard.fxml"));
+            Parent root1 = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            // stage.setMinWidth(800);
+            // stage.setMinHeight(600);
+            stage.show();
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 }
