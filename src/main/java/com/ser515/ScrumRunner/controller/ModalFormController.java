@@ -1,13 +1,22 @@
 package com.ser515.ScrumRunner.controller;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.ser515.ScrumRunner.model.QuestionForm;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import javafx.scene.control.ToggleGroup;
+import org.springframework.core.io.ClassPathResource;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 public class ModalFormController {
 
@@ -23,15 +32,51 @@ public class ModalFormController {
     @FXML
     private Label questionLabel;
 
+    private ToggleGroup optionsToggleGroup;
+
     private QuestionForm currentQuestion;
 
     @FXML
-    private void initialize(){
-            questionLabel.setText("How do you do?");
-            option1RadioButton.setText("I opt 1");
-            option2RadioButton.setText("I opt 2");
-            option3RadioButton.setText("I opt 3");
-            option4RadioButton.setText("I opt 4");
+    private void initialize() throws IOException {
+
+        optionsToggleGroup = new ToggleGroup();
+
+        option1RadioButton.setToggleGroup(optionsToggleGroup);
+        option2RadioButton.setToggleGroup(optionsToggleGroup);
+        option3RadioButton.setToggleGroup(optionsToggleGroup);
+        option4RadioButton.setToggleGroup(optionsToggleGroup);
+
+
+        QuestionForm questionForm = getRandomQuestion();
+        List<String> options = questionForm.getOptions();
+        questionLabel.setText(questionForm.getQuestionText());
+        option1RadioButton.setText(options.get(0));
+        option2RadioButton.setText(options.get(1));
+        option3RadioButton.setText(options.get(2));
+        option4RadioButton.setText(options.get(3));
+    }
+
+    public QuestionForm getRandomQuestion() throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        File file = new ClassPathResource("assets/questions/questions.json").getFile();
+
+        JsonNode rootNode = mapper.readTree(file);
+        ArrayNode questionsNode = (ArrayNode) rootNode.path("questions");
+        JsonNode selectedNode = questionsNode.get(new Random().nextInt(questionsNode.size()));
+
+        return convertToQuestionForm(selectedNode);
+    }
+
+    private QuestionForm convertToQuestionForm(JsonNode questionNode) {
+        QuestionForm questionForm = new QuestionForm();
+        questionForm.setQuestionText(questionNode.get("question").asText());
+
+        List<String> options = new ArrayList<>();
+        questionNode.get("answers").forEach(jsonNode ->
+                options.add(jsonNode.get("option").asText()));
+        questionForm.setOptions(options);
+
+        return questionForm;
     }
 
     @FXML
@@ -48,7 +93,7 @@ public class ModalFormController {
         }
         currentQuestion.setSelectedAnswer(selectedOption);
 
-    }
+}
 
     @FXML
     public void handlePlay() {

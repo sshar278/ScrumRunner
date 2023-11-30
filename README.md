@@ -7,8 +7,8 @@ ScrumRunner is a Scrum Simulation Tool built using JavaFX + Springboot.
 
 
 ## Prerequisites
-- Java JDK (8)
-- Gradle (4.2.1)
+- Amazon Corretto version 1.8 JDK
+- Gradle (6.8.1)
 
 ## Installation and Running the Application
 

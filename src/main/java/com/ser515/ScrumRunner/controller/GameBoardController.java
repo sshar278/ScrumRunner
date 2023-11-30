@@ -10,7 +10,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
@@ -46,29 +45,26 @@ public class GameBoardController {
         this.primaryStage = primaryStage;
     }
 
-    @FXML
-    public Label diceValueLabel;
-    private int diceValue;
 
     private final double[][] midpoints = {
-        // List of coordinates where the user piece is supposed to be moved to
-           {58.0, 440.0},   //Start
-           {218.0, 440.0},
-           {378.0, 440.0},
-           {528.0, 440.0},
-           {688.0, 440.0},  //Corner Tile
-           {688.0, 330.0},
-           {688.0, 220.0},
-           {688.0, 110.0},
-           {688.0, 8.0},   //Corner Tile
-           {528.0, 8.0},
-           {378.0, 8.0},
-           {218.0, 8.0},
-           {58.0, 8.0},    //Corner Tile
-           {58.0, 110.0},
-           {58.0, 220.0},
-           {58.0, 330.0},
-           //{58.0, 440.0}
+            // List of coordinates where the user piece is supposed to be moved to
+            {58.0, 440.0},   //Start
+            {218.0, 440.0},
+            {378.0, 440.0},
+            {528.0, 440.0},
+            {688.0, 440.0},  //Corner Tile
+            {688.0, 330.0},
+            {688.0, 220.0},
+            {688.0, 110.0},
+            {688.0, 8.0},   //Corner Tile
+            {528.0, 8.0},
+            {378.0, 8.0},
+            {218.0, 8.0},
+            {58.0, 8.0},    //Corner Tile
+            {58.0, 110.0},
+            {58.0, 220.0},
+            {58.0, 330.0},
+            //{58.0, 440.0}
 
     };
 
@@ -78,19 +74,21 @@ public class GameBoardController {
     public void roll(ActionEvent actionEvent) {
         System.out.println("Button Clicked");
         rollButton.setDisable(true);
-        diceValueLabel.setVisible(true);
+
         Thread thread = new Thread(() -> {
             System.out.println("Thread Running");
             Random random = new Random();
-            diceValue = random.nextInt(6) + 1;
+            int diceValue = random.nextInt(6) + 1;
             try {
                 for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
                     diceValue = random.nextInt(6) + 1;
                     File file = new File("@../../assets/dice-" + diceValue + ".png");
                     diceImage.setImage(new Image(String.valueOf(file)));
+//                    System.out.println(file);
                     Thread.sleep(50);
                 }
+                currentPosition = 0;
                 moveUserPiece(diceValue);
                 rollButton.setDisable(false);
             } catch (InterruptedException e) {
@@ -139,8 +137,6 @@ public class GameBoardController {
         System.out.println("coordinates: "+destination[0] +" "+ destination[1]);
 
         Platform.runLater(() -> {
-            System.out.println("dICE VALUE IS: "+ diceValue);
-            diceValueLabel.setText(String.valueOf(diceValue));
             gridPane.getChildren().remove(userPiece);
             gridPane.getChildren().add(userPiece);
         });
@@ -151,5 +147,5 @@ public class GameBoardController {
         transition.play();
 
         currentPosition = destinationIndex;
-}
+    }
 }
