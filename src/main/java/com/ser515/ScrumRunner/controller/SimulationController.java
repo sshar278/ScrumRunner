@@ -73,17 +73,20 @@ public class SimulationController {
             Random random = new Random();
             int diceValue = random.nextInt(6) + 1;
             try {
-                for (int i = 0; i < 15; i++) {
+                for (int x=0; x<100; x++){
+                    for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
-                    diceValue = random.nextInt(6) + 1;
-                    File file = new File("@../../assets/dice-" + diceValue + ".png");
-                    diceImage.setImage(new Image(String.valueOf(file)));
-//                    System.out.println(file);
+                        diceValue = random.nextInt(6) + 1;
+                        File file = new File("@../../assets/dice-" + diceValue + ".png");
+                        diceImage.setImage(new Image(String.valueOf(file)));
+                        Thread.sleep(100);
+                    }
+                    moveUserPiece(diceValue);
+                    userPos.add(diceValue);
+                    diceValues.add(diceValue);
                     Thread.sleep(2000);
                 }
-                moveUserPiece(diceValue);
-                userPos.add(diceValue);
-                diceValues.add(diceValue);
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
