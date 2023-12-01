@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.ButtonActionsController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="128.2" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="472.59999999999997" minWidth="10.0" prefWidth="472.59999999999997" />
@@ -28,6 +28,6 @@
             <TextField alignment="TOP_CENTER" layoutX="10.0" layoutY="36.0" prefHeight="14.0" prefWidth="458.0" style="-fx-background-color: light blue;" text="came here using &quot;Game Tutorial&quot;. 4the one is to start simulator." />
          </children>
       </TextFlow>
-      <Button fx:id="NextButton1" mnemonicParsing="false" text="Next" GridPane.rowIndex="2" />
+      <Button fx:id="NextButton1" mnemonicParsing="false" text="Next" GridPane.rowIndex="2" onAction="#NextButton1"/>
    </children>
 </GridPane>
