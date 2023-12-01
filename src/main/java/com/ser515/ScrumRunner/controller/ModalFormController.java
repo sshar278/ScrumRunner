@@ -88,8 +88,6 @@ public class ModalFormController {
         } );
         return questionForm;
     }
-
-    @FXML
     private void handleSubmit() {
         try {
             String selectedOption = "";
@@ -116,5 +114,17 @@ public class ModalFormController {
         }
 
 
+}
+
+    @FXML
+    public void handlePlay() {
+       System.out.println("This will start the timer");
     }
+
+    @FXML
+    public void handleReset() {
+        System.out.println("This will reset the timer");
+    }
+
+
 }

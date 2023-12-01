@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.GameBoardController">
+<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.SimulationController">
 
 
     <columnConstraints>
@@ -61,8 +61,8 @@
         </children>
     </Pane>
     <Pane onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="4">
-        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0">
-            <Circle fx:id="userPiece" fill="BLUE" layoutX="58.0" layoutY="440.0" radius="10" />
+        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <Circle fx:id="userPiece" fill="BLUE" layoutX="10.0" layoutY="384.0" radius="10" />
 
             <ImageView fitHeight="100" fitWidth="100">
                 <image>
@@ -116,11 +116,11 @@
                     <Image url="@../../assets/img.png" />
                 </image>
            </ImageView>
-          <Button fx:id="rollButton" layoutX="154.0" layoutY="93.0" mnemonicParsing="false" onAction="#roll" prefHeight="12.0" prefWidth="50.0" text="Roll">
+          <!-- <Button fx:id="rollButton" layoutX="154.0" layoutY="93.0" mnemonicParsing="false" onAction="#roll" prefHeight="12.0" prefWidth="50.0" text="Roll">
               <font>
                   <Font size="10.0" />
               </font>
-          </Button>
+          </Button> -->
         </HBox>
       <Label fx:id="diceValueLabel" contentDisplay="CENTER" layoutX="66.0" layoutY="82.0" prefHeight="17.0" prefWidth="0.0"  visible="true" text="1000" />
     </Pane>

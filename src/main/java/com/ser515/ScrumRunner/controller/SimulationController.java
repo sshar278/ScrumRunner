@@ -7,7 +7,6 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.control.Tab;
@@ -24,7 +23,7 @@ import java.util.Random;
 
 
 @Component
-public class GameBoardController {
+public class SimulationController {
 
     public ImageView imageView1;
     public ImageView diceImage;
@@ -65,28 +64,29 @@ public class GameBoardController {
 
     private int currentPosition = 0;
 
-    @FXML
-    public void roll(ActionEvent actionEvent) {
-//        System.out.println("Button Clicked");
-        rollButton.setDisable(true);
 
+    @FXML
+    public void initialize() {
+        System.out.println("Simulation Started");
         Thread thread = new Thread(() -> {
             System.out.println("Thread Running");
             Random random = new Random();
             int diceValue = random.nextInt(6) + 1;
             try {
-                for (int i = 0; i < 15; i++) {
+                for (int x=0; x<100; x++){
+                    for (int i = 0; i < 15; i++) {
 //                    diceImage = new ImageView();
-                    diceValue = random.nextInt(6) + 1;
-                    File file = new File("@../../assets/dice-" + diceValue + ".png");
-                    diceImage.setImage(new Image(String.valueOf(file)));
-//                    System.out.println(file);
-                    Thread.sleep(50);
+                        diceValue = random.nextInt(6) + 1;
+                        File file = new File("@../../assets/dice-" + diceValue + ".png");
+                        diceImage.setImage(new Image(String.valueOf(file)));
+                        Thread.sleep(100);
+                    }
+                    moveUserPiece(diceValue);
+                    userPos.add(diceValue);
+                    diceValues.add(diceValue);
+                    Thread.sleep(2000);
                 }
-                moveUserPiece(diceValue);
-                userPos.add(diceValue);
-                diceValues.add(diceValue);
-                rollButton.setDisable(false);
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -128,5 +128,5 @@ public class GameBoardController {
         transition.play();
 
         currentPosition = destinationIndex;
-}
+    }
 }
