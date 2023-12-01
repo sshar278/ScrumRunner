@@ -21,7 +21,7 @@
         <ImageView fitHeight="233.0" fitWidth="357.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <Image url="@../../assets/EmptyForm.png" />
         </ImageView>
-        <Button fx:id="NextButton" mnemonicParsing="false" text="Next" GridPane.rowIndex="3" />
+        <Button fx:id="NextButton2" mnemonicParsing="false" text="Next" GridPane.rowIndex="3" />
       <TextField alignment="TOP_CENTER" layoutX="10.0" layoutY="94.0" prefHeight="105.0" prefWidth="300.0" style="-fx-background-color: light blue;" text="Filled out form" GridPane.rowIndex="2" />
       <ImageView fitHeight="233.0" fitWidth="357.0" layoutX="139.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <image>
