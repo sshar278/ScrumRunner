@@ -16,6 +16,7 @@ import java.util.Objects;
 public class ButtonActionsController {
 
 
+    public Button btnSimulator;
     @FXML
     Button startGameButton;
     @FXML
@@ -77,13 +78,14 @@ public class ButtonActionsController {
     @FXML
     private void startSimulator(ActionEvent event) throws IOException{
         try{
-            primaryStage.close();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/GameBoard/SimulatorBoard.fxml"));
-            Parent root1 = loader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            // stage.setMinWidth(800);
-            // stage.setMinHeight(600);
+            Parent nextRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/GameBoard/SimulatorBoard.fxml")));
+            Scene scene = new Scene(nextRoot);
+            Stage stage = (Stage) btnSimulator.getScene().getWindow(); // get the current stage
+            // Set the minimum window size
+            stage.setMinWidth(800);
+            stage.setMinHeight(600);
+
+            stage.setScene(scene);
             stage.show();
         }
         catch(Exception e) {
