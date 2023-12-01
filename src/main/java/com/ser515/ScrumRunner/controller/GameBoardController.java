@@ -83,7 +83,6 @@ public class GameBoardController {
 //                    System.out.println(file);
                     Thread.sleep(50);
                 }
-                currentPosition = 0;
                 moveUserPiece(diceValue);
                 userPos.add(diceValue);
                 diceValues.add(diceValue);
