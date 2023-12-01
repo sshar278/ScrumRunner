@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2" vgap="2" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ser515.ScrumRunner.controller.SimulationController">
+
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="20" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="20" />
+    </rowConstraints>
+
+    <Label style="-fx-background-color: #FFFFFF; -fx-border-color: black; -fx-alignment: center;" text="ScrumRunner" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+        <font>
+            <Font size="18" />
+        </font>
+    </Label>
+
+
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Pane id="US-7" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 7" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane id="Bug-4" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 4" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane id="US-8" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 8" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <Circle fx:id="userPiece" fill="BLUE" layoutX="10.0" layoutY="384.0" radius="10" />
+
+            <ImageView fitHeight="100" fitWidth="100">
+                <image>
+                    <Image url="@../../assets/arrow.jpg" />
+                </image>
+            </ImageView>
+
+            <Label style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-alignment: center;" text="Start/End" textAlignment="CENTER">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </VBox>
+    </Pane>
+    <Pane id="US-6" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Pane id="US-1" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="40.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                   <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+
+    <Pane id="Bug-3" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Pane onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <HBox spacing="10">
+              <ImageView fx:id="diceImage" fitHeight="80.0" fitWidth="80.0" layoutX="3.0" pickOnBounds="true" preserveRatio="flase">
+                <image>
+                    <Image url="@../../assets/img.png" />
+                </image>
+           </ImageView>
+          <!-- <Button fx:id="rollButton" layoutX="154.0" layoutY="93.0" mnemonicParsing="false" onAction="#roll" prefHeight="12.0" prefWidth="50.0" text="Roll">
+              <font>
+                  <Font size="10.0" />
+              </font>
+          </Button> -->
+        </HBox>
+      <Label fx:id="diceValueLabel" contentDisplay="CENTER" layoutX="66.0" layoutY="82.0" prefHeight="17.0" prefWidth="0.0"  visible="true" text="1000" />
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <Pane id="Bug-1" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+
+    </Pane>
+
+    <Pane id="US-5" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 5" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #E84622;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Pane style="-fx-border-color: black; -fx-background-color: #19ACF1;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <Pane id="US-2" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+    <Pane id="US-4" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 4" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane id="Bug-2" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="Bug 2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane id="US-3" onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" text="User Story 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="1" GridPane.rowIndex="2" GridPane.rowSpan="1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+    <Pane style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+
+
+</GridPane>
