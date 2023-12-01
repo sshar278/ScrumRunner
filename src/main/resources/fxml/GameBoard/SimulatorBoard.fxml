@@ -61,8 +61,8 @@
         </children>
     </Pane>
     <Pane onMouseClicked="#handlePaneClick" style="-fx-border-color: black; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="4">
-        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
-            <Circle fx:id="userPiece" fill="BLUE" layoutX="10.0" layoutY="384.0" radius="10" />
+        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Circle fx:id="userPiece" fill="BLUE" layoutX="58.0" layoutY="440.0" radius="10" />
 
             <ImageView fitHeight="100" fitWidth="100">
                 <image>

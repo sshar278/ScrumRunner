@@ -65,6 +65,7 @@ public class ButtonActionsController {
             e.printStackTrace();
         }
     }
+    @FXML
     private void GameTutorialBtn() {
         System.out.println("Game tutorial has started");
         try {
@@ -87,7 +88,7 @@ public class ButtonActionsController {
         System.out.println("Next Button 1 Clicked");
         try {
             // Close the primary stage here before showing the new one
-            primaryStage.close();
+//            primaryStage.close();
 
             // Load the new scene
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Tutorial/Tutorial2.fxml"));
@@ -105,7 +106,7 @@ public class ButtonActionsController {
         System.out.println("Next Button 2 Clicked");
         try {
             // Close the primary stage here before showing the new one
-            primaryStage.close();
+//            primaryStage.close();
 
             // Load the new scene
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Tutorial/Tutorial3.fxml"));
@@ -123,7 +124,7 @@ public class ButtonActionsController {
         System.out.println("Next Button 3 Clicked");
         try {
             // Close the primary stage here before showing the new one
-            primaryStage.close();
+//            primaryStage.close();
 
             // Load the new scene
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Start/Start.fxml"));

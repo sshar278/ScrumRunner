@@ -43,6 +43,6 @@
             <Insets top="150.0" />
          </GridPane.margin>
         </Label>
-      <Button id="GameTutorialBtn" fx:id="GameTutorialBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="117.0" text="Game Tutorial" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button id="GameTutorialBtn" fx:id="GameTutorialBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="117.0" text="Game Tutorial" GridPane.columnIndex="3" GridPane.rowIndex="2" onAction="#GameTutorialBtn"/>
     </children>
 </GridPane>
