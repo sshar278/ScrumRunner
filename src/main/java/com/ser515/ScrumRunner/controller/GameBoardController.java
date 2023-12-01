@@ -147,5 +147,5 @@ public class GameBoardController {
         transition.play();
 
         currentPosition = destinationIndex;
-    }
+}
 }
