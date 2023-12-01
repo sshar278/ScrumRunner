@@ -9,7 +9,15 @@ public class QuestionForm {
     private String correctAnswer;
     private String selectedAnswer;
 
+    private Long id;
+
     // Getters and Setters
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
     public String getQuestionText() {
         return questionText;
     }
@@ -38,13 +46,14 @@ public class QuestionForm {
 
     public void setSelectedAnswer(String selectedAnswer){this.selectedAnswer =  selectedAnswer;}
 
-    // toString method for debugging
     @Override
     public String toString() {
-        return "Question{" +
+        return "QuestionForm{" +
                 "questionText='" + questionText + '\'' +
                 ", options=" + options +
                 ", correctAnswer='" + correctAnswer + '\'' +
+                ", selectedAnswer='" + selectedAnswer + '\'' +
+                ", id=" + id +
                 '}';
     }
 }
