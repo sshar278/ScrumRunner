@@ -66,6 +66,60 @@ public class ButtonActionsController {
     }
 
     @FXML
+    private void NextButton1() {
+        System.out.println("Next Button 1 Clicked");
+        try {
+            // Close the primary stage here before showing the new one
+            primaryStage.close();
+
+            // Load the new scene
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Tutorial/Tutorial2.fxml"));
+            Parent root1 = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void NextButton2() {
+        System.out.println("Next Button 2 Clicked");
+        try {
+            // Close the primary stage here before showing the new one
+            primaryStage.close();
+
+            // Load the new scene
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Tutorial/Tutorial3.fxml"));
+            Parent root1 = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void NextButton3() {
+        System.out.println("Next Button 3 Clicked");
+        try {
+            // Close the primary stage here before showing the new one
+            primaryStage.close();
+
+            // Load the new scene
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Start/Start.fxml"));
+            Parent root1 = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     private void exitGame(ActionEvent event) {
         System.out.println("Exiting game....");
         Stage stage = (Stage) btnEnd.getScene().getWindow();
