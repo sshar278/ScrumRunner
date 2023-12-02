@@ -5,7 +5,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.ser515.ScrumRunner.model.QuestionForm;
 import com.ser515.ScrumRunner.model.Results;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,12 +16,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
 
+import java.util.Timer;
+import java.util.TimerTask;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Collectors;
+import java.util.*;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import javafx.util.Duration;
 
 @Controller
 public class ModalFormController {
@@ -43,6 +51,21 @@ public class ModalFormController {
 
     private QuestionForm currentQuestionData;
 
+    private Timeline timeline;
+    private int timeSeconds = 25;
+
+    // Reference to your timer label in FXML
+    @FXML
+    private Label timerLabel;
+
+    private Stage stage;
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
+
+
+
     @FXML
     private void initialize() throws IOException {
 
@@ -61,6 +84,8 @@ public class ModalFormController {
         option2RadioButton.setText(options.get(1));
         option3RadioButton.setText(options.get(2));
         option4RadioButton.setText(options.get(3));
+
+        startTimer(stage);
     }
 
     public QuestionForm getRandomQuestion() throws IOException {
@@ -88,6 +113,7 @@ public class ModalFormController {
         } );
         return questionForm;
     }
+    @FXML
     private void handleSubmit() {
         try {
             String selectedOption = "";
@@ -116,15 +142,36 @@ public class ModalFormController {
 
 }
 
-    @FXML
-    public void handlePlay() {
-       System.out.println("This will start the timer");
+
+
+    public void startTimer(Stage stage) {
+        if (timeline != null) {
+            timeline.stop();
+        }
+
+        // Update timerLabel every second
+        timerLabel.setText(timeToString(timeSeconds));
+
+        // Set up the Timeline to count down every second
+        timeline = new Timeline();
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                timeSeconds--;
+                timerLabel.setText(timeToString(timeSeconds));
+                if (timeSeconds <= 0) {
+                    timeline.stop();
+                    stage.close();
+                }
+            }
+        }));
+        timeline.playFromStart();
     }
 
-    @FXML
-    public void handleReset() {
-        System.out.println("This will reset the timer");
+    private String timeToString(int time) {
+        int minutes = time / 60;
+        int seconds = time % 60;
+        return String.format("%02d:%02d", minutes, seconds);
     }
-
-
 }

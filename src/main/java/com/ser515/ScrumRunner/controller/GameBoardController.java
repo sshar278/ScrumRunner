@@ -4,7 +4,10 @@ import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
@@ -15,6 +18,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 import java.io.File;
@@ -97,9 +101,28 @@ public class GameBoardController {
 
     @FXML
     private void handlePaneClick(MouseEvent event) {
+
         Pane clickedPane = (Pane) event.getSource();
         System.out.println("Clicked Pane ID: " + clickedPane.getId());
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ModalForm/ModalForm.fxml"));
+            Parent root = loader.load();
+
+            Stage newStage = new Stage();
+            newStage.setTitle("Questions");
+
+            Scene scene = new Scene(root);
+            newStage.setScene(scene);
+
+            newStage.show();
+            ModalFormController modalFormController = loader.getController();
+            modalFormController.setStage(newStage);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
 
     private void moveUserPiece(int steps) {
         if (steps < 1) {
